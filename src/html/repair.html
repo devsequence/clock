@@ -6,7 +6,7 @@
 <body>
 <!--page-wrapper-->
 <div class="page-wrapper">
-	@@include('./includes/_header.html')
+	@@include('./includes/_header-page.html')
 	<!--page-content-->
 	<div class="page-content">
 		<section class="main-banner main-commission">
@@ -35,12 +35,12 @@
 					</div>
 				</div>
 				<div class="main-banner__media">
-					<div class="main-banner__image">
+					<div class="main-banner__image main-image__big">
 						<img src="../static/images/general/repair-banner-img.png" alt="repair">
 					</div>
-                    <div class="main-banner__des">
+                    <div class="main-banner__media-des">
                         <button type="submit" class="btn-arrow">
-                            Прайс
+							Прайс
                             <svg class="icon">
                                 <use xlink:href="#ico-arrow-right"></use>
                             </svg>
@@ -51,7 +51,7 @@
 			<div class="main-advantage">
 				<div class="container">
 					<button type="submit" class="btn-arrow">
-						Заполнить форму
+						Прайс
 						<svg class="icon">
 							<use xlink:href="#ico-arrow-right"></use>
 						</svg>
@@ -59,44 +59,45 @@
 						<div class="main-advantage__item">
 							<div class="main-advantage__media flex-center">
 								<svg class="icon">
-									<use xlink:href="#ico-komission-1"></use>
+									<use xlink:href="#ico-repair-1"></use>
 								</svg>
 							</div>
 							<div class="main-advantage__text">
-								Лучшая цена
-								в Украине
+								Гарантия 24 мес
 							</div>
 						</div>
 						<div class="main-advantage__item">
 							<div class="main-advantage__media flex-center">
 								<svg class="icon">
-									<use xlink:href="#ico-komission-2"></use>
+									<use xlink:href="#ico-repair-2"></use>
 								</svg>
 							</div>
 							<div class="main-advantage__text">
-								Профессиональная
-								экспертная оценка
+								Современное
+								оборудование
 							</div>
 						</div>
 						<div class="main-advantage__item">
 							<div class="main-advantage__media flex-center">
 								<svg class="icon">
-									<use xlink:href="#ico-komission-3"></use>
+									<use xlink:href="#ico-repair-3"></use>
 								</svg>
 							</div>
 							<div class="main-advantage__text">
-								Конфиденциальность
+								7 дней
+								бесплатного
+								хранения
 							</div>
 						</div>
 						<div class="main-advantage__item">
 							<div class="main-advantage__media flex-center">
 								<svg class="icon">
-									<use xlink:href="#ico-komission-4"></use>
+									<use xlink:href="#ico-repair-4"></use>
 								</svg>
 							</div>
 							<div class="main-advantage__text">
-								Сделка за
-								20 минут
+								13-летний опыт
+								работ
 							</div>
 						</div>
 						<div class="main-advantage__item">
@@ -225,12 +226,6 @@
 						<label class="label">
 							<input type="text" name="sold-request[model]" class="input"  placeholder="Модель">
 						</label>
-						<label class="label">
-							<input type="number" name="sold-request[year]"  class="input"  placeholder="Год">
-						</label>
-						<select name="sold-request[Completeness]" class="select">
-							<option selected>Комплектность</option>
-						</select>
 						<div class="image-upload">
 							<div class="image-upload__title">
 								Фото ваших часов
@@ -250,9 +245,6 @@
 							</div>
 						</div>
 
-						<label class="label">
-							<input type="text" name="sold-request[sum] "  class="input" placeholder="В какую сумму оцениваете">
-						</label>
 						<textarea name="sold-request[sum]"  placeholder="Комментарий (для более точной оценки опишите ваши часы максимально детально)" class="textarea"></textarea>
 						<div class="form-info">
 							* — поля, обязательные для заполнения
@@ -328,13 +320,28 @@
 				</div>
 			</div>
 		</section>
-		@@include('./includes/_banner.html')
+		<section class="banner" style="background: #3A2412 url('../static/images/general/banner-sold.png') no-repeat center center">
+			<div class="container">
+				<div class="title-banner">
+					<h2>
+						Обслуживание
+						часов:
+					</h2>
+				</div>
+				<div class="subtitle">
+					полировка, Репассаж
+				</div>
+				<div class="btn btn-line">
+					Обслуживание
+				</div>
+			</div>
+		</section>
 		<section class="question">
 			<div class="container">
 				<div class="accordion">
 					<div class="accordion-item ">
 						<div class="accordion-item__title">
-							Как быстро продаются часы по комиссии?
+							Какие часы вы ремонтируете?
 							<svg class="icon">
 								<use xlink:href="#ico-down"></use>
 							</svg>
@@ -346,7 +353,7 @@
 					</div>
 					<div class="accordion-item active">
 						<div class="accordion-item__title">
-							Могу ли я менять стоимость часов после подписания договора?
+							Если я нахожусь не в Киеве, как я могу отремонтировать  свои швейцарские часы?
 							<svg class="icon">
 								<use xlink:href="#ico-down"></use>
 							</svg>
@@ -358,7 +365,7 @@
 					</div>
 					<div class="accordion-item ">
 						<div class="accordion-item__title">
-							Какие гарантии вы даёте?
+							Кто у вас ремонтирует швейцарские часы?
 							<svg class="icon">
 								<use xlink:href="#ico-down"></use>
 							</svg>
@@ -370,7 +377,19 @@
 					</div>
 					<div class="accordion-item ">
 						<div class="accordion-item__title">
-							Как быть, если часы долго не продаются?
+							Какие запчасти вы используете при ремонте часов?
+							<svg class="icon">
+								<use xlink:href="#ico-down"></use>
+							</svg>
+						</div>
+						<div class="accordion-item__content">
+							Какие запчасти вы используете при ремонте часов?
+							Мы используем оригинальные и неоригинальные запасные части по согласованию с клиентом.
+						</div>
+					</div>
+					<div class="accordion-item ">
+						<div class="accordion-item__title">
+							Выполняете ли  вы обслуживание часов?
 							<svg class="icon">
 								<use xlink:href="#ico-down"></use>
 							</svg>
@@ -382,7 +401,7 @@
 					</div>
 					<div class="accordion-item ">
 						<div class="accordion-item__title">
-							Почему я должен вам доверять?
+							Какая гарантия предоставляется на ремонт швейцарских часов?
 							<svg class="icon">
 								<use xlink:href="#ico-down"></use>
 							</svg>

@@ -1,3 +1,19 @@
+@media screen and (min-width: 350px) {
+  .service-item{
+    &__media{
+      height: auto;
+    }
+  }
+}
+@media screen and (min-width: 550px) {
+  .service-item{
+    &__media{
+      img{
+        margin: 0 auto;
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   //.header
   .phone-popup, .header-button__logo{
@@ -140,6 +156,9 @@
       display: flex;
       align-items: center;
     }
+    &__des{
+      width: 80%;
+    }
     &__media{
       display: block;
     }
@@ -261,6 +280,7 @@
   .main-commission{
     .main-banner__title{
       text-align: left;
+      margin: 0 auto 0 0;
       h1.title{
         text-align: left;
         font-size: 64px;
@@ -274,8 +294,8 @@
       bottom: 30px;
       right: 80px;
     }
-    .main-banner__des{
-      width: 80%;
+    .main-banner__media-des{
+      display: none;
     }
   }
   .main-banner__subtitle{
@@ -290,6 +310,7 @@
     color: $default;
     p, b{
       margin-bottom: 17px;
+      display: block;
     }
     ul, ol{
       padding-left: 20px;
@@ -328,6 +349,11 @@
         margin: -4px auto;
         z-index: 5;
       }
+      &:last-of-type{
+        .sold-item__title{
+          font-size: 24px;
+        }
+      }
       &:nth-of-type(3n+3){
         &:after{
           display: none;
@@ -356,8 +382,10 @@
       .select{
         width: calc(50% - 30px);
         margin: 0 15px;
+        padding: 10px 13px;
       }
       .input, .textarea{
+        padding: 10px 13px;
         color: $primary;
       }
       .input, .select{
@@ -434,9 +462,76 @@
   .sold-request__social{
     max-width: 200px;
     margin: 0 auto;
-
+    a{
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .banner{
+    .title-banner{
+      h2{
+        font-size: 48px;
+        line-height: 56px;
+      }
+    }
+    .subtitle{
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 28px;
+      color: $white;
+      margin-bottom: 30px;
+    }
+  }
+  .accordion{
+    &-item{
+      &.active{
+        .accordion-item__title{
+          .icon{
+            transform: rotate(180deg);
+            margin: 0 auto 0;
+          }
+        }
+      }
+    }
+  }
+  .accordion-item__title {
+    .icon{
+      float: right;
+      margin: 0 auto 0;
+    }
   }
   //.main-commission
+
+
+  .service-item{
+    max-width: 576px;
+    flex-direction: column;
+    margin: 0 auto 40px;
+    &__title{
+      text-align: left;
+      font-size: 36px;
+      line-height: 40px;
+      a{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+    &__text{
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  .service-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .service-item{
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1200px){
   //.footer
@@ -533,7 +628,7 @@
     right: 94px;
     top: 0;
     margin-top: 0;
-    width: 307px;
+    width: 300px;
     height: 513px;
     z-index: 1;
   }
@@ -699,22 +794,36 @@
   //.header
   //.main-commission
   .main-commission{
+    .main-banner__title{
+      margin-bottom: 15px;
+    }
     .main-banner__subtitle, .main-banner__info{
       max-width: 490px;
+      margin: 0 auto 0 0;
     }
     .main-banner__image{
-      right: 54px;
+      right: 18px;
     }
     .main-banner__media{
       display: flex;
     }
     .main-banner__des{
+      width: 85%;
       position: relative;
       z-index: 5;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
       flex-direction: column;
+    }
+    .main-banner__media-des{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+      position: relative;
+      z-index: 5;
+      width: 50%;
     }
     .main-banner__text-ico{
       width: 200px;
@@ -736,6 +845,7 @@
       position: relative;
       right: 0;
       bottom: 0;
+      margin: 0;
     }
   }
   .main-advantage{

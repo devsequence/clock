@@ -287,11 +287,13 @@ button {
     margin-left: 21px; }
 
 .banner {
-  background-size: cover;
+  background-size: cover !important;
   text-align: center; }
   .banner h2 {
     margin-bottom: 27px; }
   .banner .title-banner h2 {
+    text-transform: uppercase;
+    font-weight: 700;
     color: #ffffff; }
 
 .accordion-item {
@@ -299,11 +301,13 @@ button {
   border: 1px solid #D8D1CA;
   margin-bottom: 15px;
   text-align: center; }
-  .accordion-item.active .accordion-item__title {
-    font-weight: 600;
-    margin-bottom: 20px; }
-  .accordion-item.active .accordion-item__content {
-    display: block; }
+  .accordion-item.active {
+    background: #F8F5F2; }
+    .accordion-item.active .accordion-item__title {
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .accordion-item.active .accordion-item__content {
+      display: block; }
 
 .accordion-item__title {
   font-size: 18px;
@@ -387,6 +391,13 @@ button {
 
 .header-mobile__phone {
   display: none; }
+
+.header-mobile__phone-page {
+  text-align: right; }
+  .header-mobile__phone-page pre {
+    font-size: 14px;
+    line-height: 17px;
+    color: #C2A38F; }
 
 .header-mobile__nav {
   display: none; }
@@ -755,6 +766,12 @@ body.is-scroll {
   margin-bottom: 20px;
   text-align: center; }
 
+.main-commission .main-banner__title {
+  margin-bottom: 30px; }
+
+.main-commission .main-image__big {
+  width: 500px; }
+
 .main-banner__subtitle {
   font-weight: 500;
   font-size: 18px;
@@ -809,6 +826,11 @@ body.is-scroll {
       width: 100%;
       height: 100%;
       fill: #D6D6D6; }
+  .quote a {
+    color: #C2A38F;
+    text-decoration: none; }
+    .quote a:hover {
+      text-decoration: underline; }
 
 .sold {
   padding: 0 0 40px; }
@@ -830,6 +852,10 @@ body.is-scroll {
     left: 0;
     bottom: -40px;
     margin: 0 auto; }
+  .sold-item:last-of-type .sold-item__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px; }
   .sold-item:last-of-type:after {
     display: none; }
   .sold-item__step {
@@ -878,7 +904,8 @@ body.is-scroll {
   padding: 50px 0 0; }
   .sold-request h2 {
     text-align: center;
-    margin-bottom: 37px; }
+    margin-bottom: 37px;
+    text-transform: uppercase; }
   .sold-request__form {
     margin-bottom: 30px; }
   .sold-request .label {
@@ -950,7 +977,8 @@ body.is-scroll {
       color: #9A9A9A;
       border-radius: 50%; }
     .sold-request .image-upload .img-wrap {
-      display: block;
+      display: flex;
+      align-items: center;
       max-height: 100px;
       overflow: hidden; }
     .sold-request .image-upload .thumb {
@@ -1013,6 +1041,49 @@ body.is-scroll {
     .sold-request__social a img {
       width: 100%;
       height: 100%; }
+
+.service-item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 40px; }
+  .service-item__media {
+    width: 100%;
+    height: 143px;
+    margin-bottom: 15px; }
+    .service-item__media a {
+      display: block;
+      text-align: center; }
+    .service-item__media img {
+      width: auto;
+      height: 100%;
+      object-fit: contain; }
+  .service-item__des {
+    margin-bottom: 15px; }
+  .service-item__title {
+    font-size: 24px;
+    color: #C2A38F;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px; }
+    .service-item__title a {
+      font-weight: 500;
+      font-size: 24px;
+      color: #C2A38F;
+      line-height: 26px; }
+  .service-item__text {
+    color: #3A2412;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center; }
+
+@media screen and (min-width: 350px) {
+  .service-item__media {
+    height: auto; } }
+
+@media screen and (min-width: 550px) {
+  .service-item__media img {
+    margin: 0 auto; } }
 
 @media screen and (min-width: 768px) {
   .phone-popup, .header-button__logo {
@@ -1109,6 +1180,8 @@ body.is-scroll {
     .main-banner .container {
       display: flex;
       align-items: center; }
+    .main-banner__des {
+      width: 80%; }
     .main-banner__media {
       display: block; }
     .main-banner__image {
@@ -1193,7 +1266,8 @@ body.is-scroll {
     justify-content: space-between;
     padding-top: 30px; }
   .main-commission .main-banner__title {
-    text-align: left; }
+    text-align: left;
+    margin: 0 auto 0 0; }
     .main-commission .main-banner__title h1.title {
       text-align: left;
       font-size: 64px;
@@ -1203,8 +1277,8 @@ body.is-scroll {
     max-width: 240px;
     bottom: 30px;
     right: 80px; }
-  .main-commission .main-banner__des {
-    width: 80%; }
+  .main-commission .main-banner__media-des {
+    display: none; }
   .main-banner__subtitle {
     text-align: left;
     max-width: 670px; }
@@ -1215,7 +1289,8 @@ body.is-scroll {
     line-height: 18px;
     color: #3A2412; }
     .main-banner__info p, .main-banner__info b {
-      margin-bottom: 17px; }
+      margin-bottom: 17px;
+      display: block; }
     .main-banner__info ul, .main-banner__info ol {
       padding-left: 20px;
       margin-bottom: 17px; }
@@ -1242,6 +1317,8 @@ body.is-scroll {
       bottom: 50%;
       margin: -4px auto;
       z-index: 5; }
+    .sold-item:last-of-type .sold-item__title {
+      font-size: 24px; }
     .sold-item:nth-of-type(3n+3):after {
       display: none; }
   .sold-item__title {
@@ -1258,8 +1335,10 @@ body.is-scroll {
     justify-content: space-between; }
   .sold-request__form .select {
     width: calc(50% - 30px);
-    margin: 0 15px; }
+    margin: 0 15px;
+    padding: 10px 13px; }
   .sold-request__form .input, .sold-request__form .textarea {
+    padding: 10px 13px;
     color: #C2A38F; }
   .sold-request__form .input, .sold-request__form .select {
     outline: none;
@@ -1309,7 +1388,48 @@ body.is-scroll {
     font-size: 17px; }
   .sold-request__social {
     max-width: 200px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .sold-request__social a {
+      width: 45px;
+      height: 45px; }
+  .banner .title-banner h2 {
+    font-size: 48px;
+    line-height: 56px; }
+  .banner .subtitle {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 30px; }
+  .accordion-item.active .accordion-item__title .icon {
+    transform: rotate(180deg);
+    margin: 0 auto 0; }
+  .accordion-item__title .icon {
+    float: right;
+    margin: 0 auto 0; }
+  .service-item {
+    max-width: 576px;
+    flex-direction: column;
+    margin: 0 auto 40px; }
+    .service-item__title {
+      text-align: left;
+      font-size: 36px;
+      line-height: 40px; }
+      .service-item__title a {
+        font-size: inherit;
+        line-height: inherit; }
+    .service-item__text {
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px; } }
+
+@media screen and (min-width: 992px) {
+  .service-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+  .service-item {
+    width: 50%; } }
 
 @media screen and (min-width: 1200px) {
   section {
@@ -1371,7 +1491,7 @@ body.is-scroll {
     right: 94px;
     top: 0;
     margin-top: 0;
-    width: 307px;
+    width: 300px;
     height: 513px;
     z-index: 1; }
   .main-banner:after {
@@ -1484,19 +1604,31 @@ body.is-scroll {
       margin-top: -4px; }
     .header-mobile__nav .has-sub:hover ul {
       display: block; }
+  .main-commission .main-banner__title {
+    margin-bottom: 15px; }
   .main-commission .main-banner__subtitle, .main-commission .main-banner__info {
-    max-width: 490px; }
+    max-width: 490px;
+    margin: 0 auto 0 0; }
   .main-commission .main-banner__image {
-    right: 54px; }
+    right: 18px; }
   .main-commission .main-banner__media {
     display: flex; }
   .main-commission .main-banner__des {
+    width: 85%;
     position: relative;
     z-index: 5;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column; }
+  .main-commission .main-banner__media-des {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    width: 50%; }
   .main-commission .main-banner__text-ico {
     width: 200px;
     height: 200px; }
@@ -1513,7 +1645,8 @@ body.is-scroll {
   .main-commission .btn-arrow {
     position: relative;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    margin: 0; }
   .main-advantage {
     z-index: 3;
     position: relative; }

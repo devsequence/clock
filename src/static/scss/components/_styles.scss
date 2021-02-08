@@ -195,13 +195,15 @@ button{
   }
 }
 .banner{
-  background-size: cover;
+  background-size: cover !important;
   text-align: center;
   h2{
     margin-bottom: 27px;
   }
   .title-banner{
     h2{
+      text-transform: uppercase;
+      font-weight: 700;
       color: $white;
     }
   }
@@ -213,6 +215,7 @@ button{
     margin-bottom: 15px;
     text-align: center;
     &.active{
+      background: #F8F5F2;
      .accordion-item__title{
        font-weight: 600;
        margin-bottom: 20px;
@@ -239,4 +242,7 @@ button{
     line-height: 19px;
     color: $primary;
   }
+}
+.wysiwyg{
+
 }

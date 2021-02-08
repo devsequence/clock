@@ -74,6 +74,14 @@
 .header-mobile__phone{
   display: none;
 }
+.header-mobile__phone-page{
+  text-align: right;
+  pre{
+    font-size: 14px;
+    line-height: 17px;
+    color: $primary;
+  }
+}
 .header-mobile__nav{
   display: none;
 }
