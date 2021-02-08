@@ -1,0 +1,242 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $monserant;
+}
+h1 {
+  font-size: 36px;
+  line-height: 38px;
+  color: $default;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 31px;
+  color: $default;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $default;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 28px;
+  color: $default;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+}
+
+p {
+  font-size: 14px;
+  line-height: 23px;
+}
+.slick-slide{
+  outline: none !important;
+}
+a{
+  outline: none !important;
+}
+img {
+  display: block;
+  //width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+.label{
+  font-family: $monserant;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+.input, .select{
+  border:1px solid  $gray-100;
+  height: 46px;
+  padding: 10px;
+  font-family: $monserant;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-100;
+}
+.textarea{
+  border:1px solid  $gray;
+  height: 146px;
+  padding: 10px;
+  font-family: $monserant;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $default;
+  outline: none;
+  resize: none;
+}
+input{
+  outline: none;
+}
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-line{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  padding: 12px 25px 13px;
+  background: transparent;
+  font-size: 18px;
+  color: $white;
+  border: 1px solid $white;
+}
+.btn-arrow{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 188px;
+  padding: 12px 25px 13px;
+  background: $default;
+  font-size: 18px;
+  color: $white;
+  .icon{
+    width: 15px;
+    fill: $primary;
+    margin-left: 21px;
+  }
+}
+.banner{
+  background-size: cover;
+  text-align: center;
+  h2{
+    margin-bottom: 27px;
+  }
+  .title-banner{
+    h2{
+      color: $white;
+    }
+  }
+}
+.accordion{
+  &-item{
+    padding: 14px 17px;
+    border: 1px solid $gray-100;
+    margin-bottom: 15px;
+    text-align: center;
+    &.active{
+     .accordion-item__title{
+       font-weight: 600;
+       margin-bottom: 20px;
+     }
+     .accordion-item__content{
+       display: block;
+     }
+    }
+  }
+  &-item__title{
+    font-size: 18px;
+    line-height: 19px;
+    .icon{
+      display: block;
+      width: 16px;
+      height: 16px;
+      fill: $gray-100;
+      margin: 12px auto 0;
+    }
+  }
+  &-item__content{
+    display: none;
+    font-size: 18px;
+    line-height: 19px;
+    color: $primary;
+  }
+}

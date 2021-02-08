@@ -1,0 +1,322 @@
+.main-commission{
+  .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.main-banner{
+  &__subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $primary;
+    margin-bottom: 37px;
+    text-align: center;
+  }
+  &__info{
+    display: none;
+  }
+  .btn-arrow{
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+}
+
+.quote{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: $default;
+  text-align: center;
+  border-bottom: 1px solid $light;
+  padding: 70px 0 30px;
+  margin: -20px 0 48px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  &-media{
+    position: absolute;
+    width: 45px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    &:before, &:after{
+      content: '';
+      width: 100000px;
+      height: 1px;
+      background-color: $light;
+      top: 50%;
+      position: absolute;
+    }
+    &:before{
+      right: 100%;
+      margin-right: 10px;
+    }
+    &:after{
+      left: 100%;
+      margin-left: 10px;
+    }
+    .icon{
+      width: 100%;
+      height: 100%;
+      fill: $light;
+    }
+  }
+}
+.sold{
+  padding: 0 0 40px;
+  h2{
+    text-align: center;
+    margin-bottom: 28px;
+  }
+}
+
+.sold-wrap {}
+.sold-item {
+  margin-bottom: 80px;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    background: url("../images/svg/ico-arrow-right.svg") no-repeat;
+    width: 23px;
+    height: 10px;
+    transform: rotate(90deg);
+    right: 0;
+    left: 0;
+    bottom: -40px;
+    margin: 0 auto;
+  }
+  &:last-of-type{
+    &:after{
+      display: none;
+    }
+  }
+  &__step{
+    font-size: 48px;
+    font-weight: 700;
+    color: $primary;
+    height: 148px;
+    width: 148px;
+    margin: 0 auto;
+    border: 1px dashed $primary;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  &__title{
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    color: $default;
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    margin: -20px auto;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 60px;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.85) 100%);
+    }
+  }
+  &__info{
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    span{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 14px;
+      color: $primary;
+    }
+  }
+}
+
+.sold-request{
+  background: $gray;
+  overflow: hidden;
+  padding: 50px 0 0;
+  h2{
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  &__form{
+    margin-bottom: 30px;
+  }
+  .label{
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .select{
+    display: block;
+    margin-bottom: 24px;
+    padding: 0 30px;
+  }
+  .textarea{
+    display: block;
+    width: 100%;
+  }
+  .input, .select{
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .image-upload{
+    min-height: 250px;
+    margin-bottom: 20px;
+    background: $white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border:1px dashed  $gray-100;
+    &__title{
+      font-family: $monserant;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $gray-100;
+    }
+    &__image{
+      margin: 10px 0 14px;
+      .icon{
+        margin-top: 30px;
+        fill: $gray-100;
+      }
+    }
+    &__link{
+      position: relative;
+      span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $primary;
+        text-decoration: underline;
+      }
+      &:hover{}
+    }
+    .label{
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .thumb-Images{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      li{
+        width: calc(50% - 20px);
+        margin: 0 10px 20px;
+        position: relative;
+      }
+    }
+    .close{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: rgba($default, .8);
+      color: $default-100;
+      border-radius: 50%;
+    }
+    .img-wrap{
+      display: block;
+      max-height: 100px;
+      overflow: hidden;
+    }
+    .thumb{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .FileNameCaptionStyle{
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      color: $primary;
+      width: 100%;
+      background: rgba($default, .8);
+    }
+  }
+  .form-info{
+    font-size: 12px;
+    line-height: 13px;
+    color: $primary;
+    margin: 20px 0;
+  }
+  &__info{
+    padding: 50px 0;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: -50vw;
+      width: 150vw;
+      height: 100%;
+      background: $white;
+      z-index: -1;
+    }
+    h2{
+      margin-bottom: 27px;
+    }
+  }
+  &__info-wrap{
+    margin-bottom: 40px;
+  }
+  &__info-item{
+    margin-bottom: 20px;
+  }
+  &__info-media{
+    margin-bottom: 20px;
+    .icon{
+      display: block;
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      fill: $gray-100;
+    }
+  }
+  &__info-text{
+    font-size: 18px;
+    line-height: 23px;
+    color: $default;
+    text-align: center;
+    a{
+      font-size: 18px;
+      line-height: 23px;
+      color: $default;
+    }
+  }
+  &__social{
+    ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    a{
+      width: 60px;
+      height: 60px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
