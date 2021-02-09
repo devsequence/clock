@@ -1,0 +1,48 @@
+.guarantee{
+  padding: 0 0 40px;
+}
+.guarantee-info{
+  background-size: cover !important;
+  &__item{
+    margin-bottom: 30px;
+    .read-more{
+      background: transparent;
+      text-decoration: underline;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: $primary;
+      width: 100%;
+      text-align: right;
+    }
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 42px;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    span{
+      display: block;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+  &__text{
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    &.show-more{
+      max-height: 80px;
+      overflow: hidden;
+    }
+  }
+}
+.table-info{
+  table{
+    display: none;
+  }
+}

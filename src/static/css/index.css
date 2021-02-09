@@ -325,6 +325,52 @@ button {
   line-height: 19px;
   color: #C2A38F; }
 
+.wysiwyg {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3A2412; }
+  .wysiwyg p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 8px; }
+  .wysiwyg b, .wysiwyg strong {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 8px; }
+  .wysiwyg ul li {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative; }
+    .wysiwyg ul li:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C2A38F; }
+  .wysiwyg ol {
+    list-style: none;
+    counter-reset: li; }
+    .wysiwyg ol li {
+      margin-bottom: 15px; }
+      .wysiwyg ol li:before {
+        content: counters(li, ".") ". ";
+        counter-increment: li;
+        color: #3A2412;
+        font-weight: 700; }
+    .wysiwyg ol ul {
+      counter-reset: li; }
+      .wysiwyg ol ul li:before {
+        content: ''; }
+
 .header {
   background: #F8F5F2; }
 
@@ -1076,6 +1122,46 @@ body.is-scroll {
     font-size: 14px;
     line-height: 20px;
     text-align: center; }
+
+.guarantee {
+  padding: 0 0 40px; }
+
+.guarantee-info {
+  background-size: cover !important; }
+  .guarantee-info__item {
+    margin-bottom: 30px; }
+    .guarantee-info__item .read-more {
+      background: transparent;
+      text-decoration: underline;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #C2A38F;
+      width: 100%;
+      text-align: right; }
+  .guarantee-info__title {
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px; }
+    .guarantee-info__title span {
+      display: block;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 500; }
+  .guarantee-info__text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 16px; }
+    .guarantee-info__text.show-more {
+      max-height: 80px;
+      overflow: hidden; }
+
+.table-info table {
+  display: none; }
 
 @media screen and (min-width: 350px) {
   .service-item__media {

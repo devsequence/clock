@@ -16,6 +16,7 @@ $(window).on('load', function () {
         });
     }
 });
+// header nav
 $('.header-btn').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
@@ -29,7 +30,10 @@ $('.header-popup .popup-close').on('click', function (e) {
     $('.header-popup').removeClass('is-open');
     $('body').removeClass('is-scroll');
 });
+// header nav
 
+
+// function for popup
 function popupOpen() {
     const $popupButton = $('.popup-btn');
     $popupButton.on('click', function (e) {
@@ -43,21 +47,26 @@ function popupOpen() {
 popupOpen();
 
 $('.popup-close').on('click', function (e) {
-    var $this = $(this);
+    const $this = $(this);
     $this.parent().parent().removeClass('active');
     $('.popup-overlay').removeClass('active');
     $('body').removeClass('is-scroll');
 });
 $('.popup-overlay').on('click', function (e) {
-    var $this = $(this);
+    const $this = $(this);
     $this.removeClass('active');
     $('.popup').removeClass('active');
     $('body').removeClass('is-scroll');
 });
+// function for popup
+
+// accordion item
 $('.accordion-item').on('click', function (e) {
-    var $this = $(this);
+    const $this = $(this);
     $this.toggleClass('active');
 });
+// accordion item
+// guarantee item show more
 $('.guarantee-info__text').each(function (e) {
     const $this = $(this);
     const textLength = $this.text().length;
@@ -67,3 +76,9 @@ $('.guarantee-info__text').each(function (e) {
     }
 });
 
+$('.read-more').on('click', function () {
+    const $this = $(this);
+    $this.find('span').toggleClass('hidden');
+    $this.prev().toggleClass('show-more')
+});
+// guarantee item show more
