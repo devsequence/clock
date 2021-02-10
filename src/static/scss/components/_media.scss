@@ -595,8 +595,10 @@
   }
   .not-found{
     &__media{
-      max-height: 500px;
-      img{}
+
+      img{
+
+      }
     }
     .header-mobile__logo{
       margin: 0 auto 0 0;
@@ -1131,11 +1133,86 @@
       margin-bottom: 20px;
     }
   }
-
+  .bread-crumbs{
+    display: flex;
+    padding: 20px 0;
+    ul{
+      display: flex;
+      margin: 0 -5px;
+    }
+    li{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: $primary;
+      margin: 0 5px;
+      &:after{
+        position: relative;
+        content: '|';
+        left: 0;
+        top: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: $primary;
+      }
+      &:last-of-type{
+        &:after{
+          display: none;
+        }
+      }
+    }
+    a{
+      text-decoration: underline;
+      color: $default;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
   .main-information{
     .container{
       flex-direction: row;
       flex-wrap: nowrap;
+    }
+  }
+  .about-slider{
+    .slide{
+      a{
+        position: relative;
+        &:before, &:after{
+          position: absolute;
+          content: '';
+          opacity: 0;
+          transition: all ease 150ms;
+        }
+        &:before{
+          background: url("../images/svg/ico-plus.svg") no-repeat center;
+          width: 48px;
+          height: 48px;
+          border: 3px solid $white;
+          box-sizing: border-box;
+          z-index: 2;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:after{
+          background: rgba($default, .6);
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+        &:hover{
+          &:before, &:after{
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }

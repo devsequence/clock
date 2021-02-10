@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="reviews">
+			<div class="container">
+				<h1 class="title">
+					Гарантия
+				</h1>
+				<div class="reviews-top">
+					<button class="btn-reviews btn-arrow" type="button">
+						Оставить отзыв
+						<svg class="icon">
+							<use xlink:href="#ico-arrow-right"></use>
+						</svg>
+					</button>
+					<div class="reviews-top__view">
+						<span>
+							Сортировать:
+						</span>
+						<select>
+							<option value="date">По дате</option>
+							<option value="date">По дате</option>
+							<option value="date">По дате</option>
+							<option value="date">По дате</option>
+						</select>
+					</div>
+					<div class="reviews-wrap">
+						<div class="reviews-item">
+							<div class="reviews-item__inner">
+								<div class="reviews-item__title">
+									<span>Сергей</span>
+									<ul class="reviews-item__rating">
+										<li>
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</li>
+									</ul>
+								</div>
+								<div class="reviews-item__date">
+									18 января 2021
+								</div>
+								<div class="reviews-item__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. At orci, sed id scelerisque nunc, turpis. At quam faucibus arcu purus aliquet gravida.
+								</div>
+							</div>
+							<div class="reviews-item__answer">
+								<div class="reviews-item__answer-title">Ответ администратора</div>
+								<div class="reviews-item__answer-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. At orci, sed id scelerisque nunc, turpis. At quam faucibus arcu purus aliquet gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At orci, sed id scelerisque nunc, turpis. At quam faucibus arcu purus aliquet gravida.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews-pagination pagination">
+						<ul class="pagination-list">
+							<li class="pagination-item pagination-prev is-disable">
+								<a href="#" class="pagination-link">
+									<svg class="icon">
+										<use xlink:href="#ico-left"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								1
+<!--								or -->
+<!--								<a href="#" class="is-active">1</a>-->
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#">6</a>
+							</li>
+							<li class="pagination-item pagination-next">
+								<a href="#" class="pagination-link">
+									<svg class="icon">
+										<use xlink:href="#ico-right"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="reviews-form">
+						<form>
+							<div class="rating-group">
+								<span>Оценка</span>
+								<label class="rating__label rating__label" aria-label="1 star" for="rating1">
+									<svg class="icon">
+										<use xlink:href="#ico-star"></use>
+									</svg>
+								</label>
+								<input class="rating__input" name="reviews[rating]" id="rating1" value="1" type="radio">
+								<label class="rating__label rating__label" aria-label="2 star" for="rating2">
+									<svg class="icon">
+										<use xlink:href="#ico-star"></use>
+									</svg>
+								</label>
+								<input class="rating__input" name="reviews[rating]" id="rating2" value="2" type="radio">
+								<label class="rating__label rating__label" aria-label="3 star" for="rating3">
+									<svg class="icon">
+										<use xlink:href="#ico-star"></use>
+									</svg>
+								</label>
+								<input class="rating__input" name="reviews[rating]" id="rating3" value="3" type="radio">
+								<label class="rating__label rating__label" aria-label="4 star" for="rating4">
+									<svg class="icon">
+										<use xlink:href="#ico-star"></use>
+									</svg>
+								</label>
+								<input class="rating__input" name="reviews[rating]" id="rating4" value="4" type="radio">
+								<label class="rating__label rating__label" aria-label="5 star" for="rating5">
+									<svg class="icon">
+										<use xlink:href="#ico-star"></use>
+									</svg>
+								</label>
+								<input class="rating__input" name="reviews[rating]" id="rating5" value="5" type="radio">
+							</div>
+
+							<label class="label">
+								<input type="text" name="reviews[name]"  placeholder="Ваше имя*" class="input" required>
+							</label>
+							<label class="label">
+								<input type="tel" name="reviews[phone]"  placeholder="Номер телефона*" class="input" required>
+							</label>
+							<label for="reviews-text">
+								Текст отзыва
+							</label>
+							<textarea id="reviews-text" name="reviews[text]"  placeholder="" class="textarea"></textarea>
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_script.html')
+
+
+</body>
+</html>
