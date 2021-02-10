@@ -1,0 +1,56 @@
+.bread-crumbs{
+  display: none;
+}
+.about-page{
+  padding: 0 0 40px;
+  .slick-list{
+    margin: 0 -10px;
+  }
+  .slide{
+    box-sizing: border-box;
+    padding: 10px;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    li{
+      margin: 0 6px;
+      width: 14px;
+      height: 14px;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      font-size: 0;
+      overflow: hidden;
+      position: relative;
+      button{
+        text-indent: -999px;
+        font-size: 0;
+      }
+      &:before{
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        background: $default-100;
+        border-radius: 50%;
+      }
+      &.slick-active{
+        border-color: $primary;
+        &:before{
+          background: $primary;
+        }
+      }
+    }
+  }
+}

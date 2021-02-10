@@ -302,6 +302,13 @@ button{
     }
   }
   li{}
-  a{}
-  img{}
+  a{
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary;
+  }
+  img{
+    display: block;
+    margin: 0 auto 20px;
+  }
 }

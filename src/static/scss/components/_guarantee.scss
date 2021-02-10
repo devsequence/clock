@@ -1,6 +1,7 @@
 .guarantee{
   padding: 0 0 40px;
 }
+
 .guarantee-info{
   background-size: cover !important;
   &__item{
@@ -44,5 +45,20 @@
 .table-info{
   table{
     display: none;
+  }
+  .btn-arrow{
+    max-width: 280px;
+    margin-bottom: 30px;
+    .icon{
+      width: 32px;
+    }
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: $default;
+    p{
+      margin-bottom: 18px;
+    }
   }
 }
