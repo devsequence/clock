@@ -1,0 +1,40 @@
+.price-item{
+  &__title{}
+  &__table{}
+}
+.price-wrap{
+  .table-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__numb{
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: $gray;
+    }
+    &__title{
+      width: calc(100% - 45px);
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+    &__price{
+      width: 100%;
+      padding-left: 0;
+      text-align: right;
+    }
+    &:first-of-type{
+      display: none;
+    }
+  }
+}
+.price-info{
+  &__title{}
+  &__text{
+    p{}
+  }
+}

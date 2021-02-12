@@ -1,0 +1,34 @@
+.vacancies{}
+.vacancies-wrap{}
+.vacancies-item{
+  margin-bottom: 30px;
+  &__title{
+    font-size: 24px;
+    color: $default;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 9px;
+    p{
+      margin-bottom: 9px;
+    }
+  }
+  &__price{
+    span{
+      color: $gray-100;
+      display: block;
+      font-size: 18px;
+      line-height: 32px;
+      &.vacancies-item__price-count{
+        color: $primary;
+        font-size: 18px;
+        b{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

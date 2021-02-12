@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .header-mobile__logo{
     margin: 0 auto;
   }
@@ -28,5 +33,6 @@
   }
   .btn-arrow{
     max-width: 278px;
+    font-size: 14px;
   }
 }

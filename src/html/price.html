@@ -9,8 +9,7 @@
 	@@include('./includes/_header.html')
 	<!--page-content-->
 	<div class="page-content">
-		
-		<section class="bread-crumbs">
+		<section class="bread-crumbs page-info">
 			<div class="container">
 				<ul class="bread-crumbs__list">
 					<li class="bread-crumbs__list">
@@ -24,25 +23,69 @@
 				</ul>
 			</div>
 		</section>
-		<section class="vacancies">
+		<section class="price">
 			<div class="container">
-				<div class="vacancies-wrap">
-					<div class="vacancies-item">
-						<div class="vacancies-item__title">Название вакансии</div>
-						<div class="vacancies-item__text text-column">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus adipiscing tortor, condimentum massa. Sagittis volutpat in in nibh maecenas sit odio vulputate. Morbi facilisis gravida enim sodales. Nam in at montes, lacus.Hac nibh id elit orci lectus. Mattis eu etiam tincidunt aliquet viverra nulla ac odio. Sed pretium consectetur euismod at tempor interdum diam mauris. Mauris, lorem egestas adipiscing hendrerit nullam cursus non. Nisl phasellus morbi in pellentesque. Imperdiet volutpat pretium adipiscing sed in risus tellus sed.
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus adipiscing tortor, condimentum massa. Sagittis volutpat in in nibh maecenas sit odio vulputate. Morbi facilisis gravida enim sodales. Nam in at montes, lacus.Hac nibh id elit orci lectus. Mattis eu etiam tincidunt aliquet viverra nulla ac odio. Sed pretium consectetur.
-							</p>
+				<h1 class="title title-center">
+					Наш прайс
+				</h1>
+				<div class="price-wrap">
+					<div class="price-item">
+						<div class="price-item__title">
+							Реставрация / полировка
 						</div>
-						<div class="vacancies-item__price">
-							<span>Приблизительный оклад:</span>
-							<span class="vacancies-item__price-count">
-								<b>10 000</b> грн - <b>17 000</b> грн
-							</span>
+						<div class="price-item__table">
+							<div class="table-item">
+								<div class="table-item__numb">
+									№
+								</div>
+								<div class="table-item__title">
+									Наименование
+								</div>
+								<div class="table-item__price">
+									Цена $
+								</div>
+							</div>
+							<div class="table-item">
+								<div class="table-item__numb">
+									1
+								</div>
+								<div class="table-item__title">
+									Корпус стальной: 1 тон / 2 тона
+								</div>
+								<div class="table-item__price">
+									<span>
+										Цена:
+									</span>
+									100/150$
+								</div>
+							</div>
 						</div>
+					</div>
+				</div>
+				<div class="price-info">
+					<div class="price-info__title">
+						Примечания
+					</div>
+					<div class="table-info__text">
+						<p>
+							<b>*</b> в этих часах вы можете принимать душ или плавать в бассейне (хотя некоторые специалисты все же считают, что для плавания пригодны часы со степенью защищенности не ниже 10 бар). но надо учитывать, что при прыжке в воду или в момент удара руки об воду, при резком гребке, давление может кратковременно превысить предельные 5 бар — и часы, увы, придется сдавать в мастерскую. поэтому, если вы занимаетесь водными видами спорта регулярно, стоит отдать предпочтение часам с более высокой степенью водозащиты.
+						</p>
+						<p>
+							<b>**</b> не рекомендуется пользоваться кнопками и головкой, за исключением тех случаев, где это предусмотрено инструкцией по эксплуатации.
+						</p>
+						<p>
+							<b>4.</b> повреждения, вызванные попаданием на изделие едких химических веществ или растворителей: щелочи, кислоты, ртуть и ее пары, растворители пластиков и т. п.;
+						</p>
+						<p>
+							<b>5.</b> повреждение изделий из-за попадания внутрь инородных предметов, веществ или насекомых;
+						</p>
+						<p>
+							<b>6.</b> повреждение механизма календаря из-за перевода стрелок владельцем часов в период между 23.00 и 04.00 часами (когда задействован механизм автоматического изменения даты и дня недели)
+
+							мы настоятельно рекомендуем внимательно ознакомиться с инструкцией по эксплуатации часов во избежание отказа в гарантийном ремонте.
+
+							при наличии повреждений, на которые не распространяется гарантия, часы не подлежат дальнейшему гарантийному обслуживанию.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -57,7 +100,7 @@
     @@include('./includes/symbol/icons.html')
 </div>
 
-@@include('./includes/_script.html')
+@@include('./includes/_scripts.html')
 
 </body>
 </html>

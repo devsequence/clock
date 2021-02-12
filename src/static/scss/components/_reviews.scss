@@ -1,0 +1,119 @@
+.reviews{
+  padding: 28px 0 0;
+  .btn-arrow{
+    max-width: 280px;
+    margin-bottom: 19px;
+  }
+  .title-center{
+    margin-bottom: 28px;
+  }
+  &-top__view{
+    display: flex;
+    flex-direction: column;
+    span{
+      font-size: 18px;
+      line-height: 32px;
+      color: $gray-100;
+    }
+    select{
+      font-size: 18px;
+      line-height: 32px;
+      color: $primary;
+      border: 0;
+      border-bottom: 1px solid $primary;
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.reviews-wrap{}
+.reviews-item{
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $default-100;
+  &__title{
+    width: calc(100% - 150px);
+    font-size: 18px;
+    line-height: 32px;
+    color: $default;
+    margin-bottom: 12px;
+  }
+  &__rating{
+    display: flex;
+    align-items: center;
+    margin: 0 -2px;
+    .is-active{
+      .icon{
+        fill: $primary;
+      }
+    }
+    li{
+      margin: 0 2px;
+      .icon{
+        width: 18px;
+        height: 18px;
+        fill: transparent;
+        stroke: $primary;
+      }
+    }
+  }
+  &__date{
+    font-size: 14px;
+    line-height: 18px;
+    color: $default-100;
+    width: 150px;
+    text-align: right;
+
+  }
+  &__text, &__answer-text{
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  &__answer{
+    background: $gray;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  &__answer-title{
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+}
+.reviews-form{
+  box-sizing: border-box;
+  padding: 20px 15px;
+  background: $gray;
+  margin: 0 -15px;
+  .rating-group{
+    margin: 0 0 30px;
+  }
+  .label{
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .textarea{
+    display: block;
+    width: 100%;
+  }
+  .input{
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .form-info{
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .btn-arrow{
+    max-width: 280px;
+  }
+}

@@ -22,8 +22,8 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
-  line-height: 31px;
+  font-size: 36px;
+  line-height: 36px;
   color: $default;
   font-weight: 500;
 }
@@ -74,6 +74,9 @@ section {
   padding: 40px 0;
   z-index: 1;
 }
+.title-center{
+  text-align: center;
+}
 .label{
   font-family: $monserant;
   font-weight: 500;
@@ -102,7 +105,7 @@ section {
   outline: none;
   resize: none;
 }
-input{
+input, select{
   outline: none;
 }
 .section {
@@ -311,4 +314,107 @@ button{
     display: block;
     margin: 0 auto 20px;
   }
+}
+.pagination{
+  margin-bottom: 20px;
+  &-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon{
+    width: 15px;
+    height: 15px;
+    fill: $default-100;
+  }
+  li{
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary;
+    font-weight: 600;
+    margin: 0 8px;
+  }
+  a{
+    font-weight: 400;
+    font-size: 18px;
+    color: $default;
+    text-decoration: underline;
+    padding: 5px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .is-disable{
+    .icon{
+      fill: rgba($default-100, .6);
+    }
+  }
+  .is-active{
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary;
+    font-weight: 600;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+}
+
+.rating-group{
+  span{
+    font-size: 14px;
+    line-height: 15px;
+    color: $primary;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.rating-group {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.rating__label{
+  margin: 0 1px;
+}
+.rating-group .icon {
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+}
+
+.rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.rating__input--none {
+  display: none
+}
+
+.rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+
+.rating-group .icon {
+  fill: $primary;
+}
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .icon {
+  fill: transparent;
+  stroke: $gray-100;
+}
+
+/* make all stars orange on rating group hover */
+.rating-group:hover .rating__label .icon {
+  fill: $primary;
+}
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .icon {
+  fill: transparent;
+  stroke: $gray-100;
 }

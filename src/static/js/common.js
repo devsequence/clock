@@ -85,29 +85,8 @@ $('.read-more').on('click', function () {
 
 // slick slider about page
 
-$('.about-slider').slick({
-    dots: true,
-    arrows: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
+$('.btn-reviews').on('click', function (e) {
+    $('html, body').animate({
+        scrollTop: $(".reviews-form").offset().top - 100
+    }, 2000);
 });
