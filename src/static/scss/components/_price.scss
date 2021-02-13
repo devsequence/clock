@@ -1,12 +1,55 @@
+.price{
+  .title{
+    margin-bottom: 30px;
+  }
+}
 .price-item{
-  &__title{}
-  &__table{}
+  &__title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    background: $primary;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-bottom: 28px;
+    width: calc(100% + 15px);
+    .icon{
+      width: 14px;
+      height: 14px;
+      fill: $white;
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+  }
+  &__table{
+    display: none;
+    &.is-active{
+      display: none;
+    }
+  }
+  &.active{
+    .price-item__title{
+      .icon{
+        transform: rotate(180deg);
+      }
+    }
+    .price-item__table{
+      display: block;
+    }
+  }
 }
 .price-wrap{
+  margin-left: -15px;
   .table-item{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 20px;
     &__numb{
       width: 40px;
       height: 40px;
@@ -26,15 +69,63 @@
       width: 100%;
       padding-left: 0;
       text-align: right;
+      font-size: 18px;
+      line-height: 25px;
+      color: $primary;
+      font-weight: 600;
+      span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        display: inline-block;
+        color: $gray-100;
+        margin-right: 10px;
+      }
     }
     &:first-of-type{
       display: none;
     }
+    &__text{
+      margin: 0 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      p{
+        margin-bottom: 8px;
+      }
+      ul{
+        margin-bottom: 14px;
+      }
+      li{
+        position: relative;
+        &:before{
+          position: relative;
+          content: '';
+          left: 0;
+          top: -2px;
+          width: 5px;
+          display: inline-block;
+          height: 5px;
+          margin-right: 10px;
+          background: $primary;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
 .price-info{
-  &__title{}
+  &__title{
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
   &__text{
-    p{}
+    p{
+      font-size: 14px;
+      line-height: 23px;
+    }
   }
 }

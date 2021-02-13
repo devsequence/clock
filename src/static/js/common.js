@@ -14,6 +14,11 @@ $(window).on('load', function () {
                 $thisPage.removeClass('page-scroll');
             }
         });
+        // accordion price item
+        $('.price-item').on('click', function (e) {
+            const $this = $(this);
+            $this.toggleClass('active');
+        });
     }
 });
 // header nav
