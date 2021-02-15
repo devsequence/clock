@@ -31,7 +31,7 @@
 				<div class="contact-wrap">
 					<div class="contact-item">
 						<div class="contact-item__map">
-							<iframe width="350" height="350" src="https://maps.google.com/maps?q=%D0%B3.%20%D0%9A%D0%B8%D0%B5%D0%B2,%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B5%D1%89%D0%B0%D1%82%D0%B8%D0%BA%2015/4&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<iframe width="300" height="350" src="https://maps.google.com/maps?q=%D0%B3.%20%D0%9A%D0%B8%D0%B5%D0%B2,%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B5%D1%89%D0%B0%D1%82%D0%B8%D0%BA%2015/4&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 						</div>
 						<div class="contact-item__title">
 							Магазин:
@@ -70,6 +70,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="contact-item__social">
 							<ul>
 								<li>
@@ -89,8 +90,77 @@
 								</li>
 							</ul>
 						</div>
+						<div class="contact-social__list-title">
+							Мы в соц. сетях:
+						</div>
+						<ul class="contact-social__list">
+							<li>
+								<a href="#" target="_blank">
+									<svg class="icon">
+										<use xlink:href="#ico-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<svg class="icon">
+										<use xlink:href="#ico-telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<svg class="icon">
+										<use xlink:href="#ico-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<svg class="icon">
+										<use xlink:href="#ico-youtube"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
 					</div>
 				</div>
+				<div class="quote">
+					<span class="quote-media">
+						<svg class="icon">
+							<use xlink:href="#ico-quote"></use>
+						</svg>
+					</span>
+					Если у вас остались вопросы, вы можете задать их через форму обратной связи.
+					Мы ответим Вам в течении рабочего дня
+				</div>
+			</div>
+			<div class="contact-form">
+				<h2 class="title-center">
+					Форма обратной связи
+				</h2>
+				<form>
+					<label class="label">
+						<input type="text" name="reviews[name]"  placeholder="Ваше имя*" class="input" required>
+					</label>
+					<label class="label">
+						<input type="tel" name="reviews[phone]"  placeholder="Номер телефона*" class="input" required>
+					</label>
+					<label for="reviews-text" class="textarea-label">
+						Текст отзыва
+					</label>
+					<textarea id="reviews-text" name="reviews[text]"  placeholder="" class="textarea"></textarea>
+					<div class="form-info">
+						* — поля, обязательные для заполнения
+					</div>
+					<button type="submit" class="btn-arrow">
+						Отправить
+						<svg class="icon">
+							<use xlink:href="#ico-arrow-right"></use>
+						</svg>
+					</button>
+				</form>
 			</div>
 		</section>
 	</div>

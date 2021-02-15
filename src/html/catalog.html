@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+	<link rel="stylesheet" href="../static/css/jquery-ui.min.css">
+
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="main-banner main-information">
+			<div class="container">
+				<div class="main-banner__des">
+					<div class="main-banner__title">
+						<h1 class="title">
+							Магазин часов
+						</h1>
+					</div>
+					<div class="main-banner__text">
+						Магазин "Часовщик" - швейцарские часы на любой вкус. Самый широкий ассортимент и лучшие цены на рынке Украины. В нашем магазине вы можете выбрать по своим желаниям и купить современные оригинальные часы класса LUXURY. На все часы выдаются документы, подтверждающие их подлинность, а также предоставляется продлённая гарантия - 24 месяца. Для вашего удобства магазин расположен в центре Киева.
+					</div>
+					<div class="main-banner__contact">
+						<b>
+							Ждём вас по адресу:
+						</b>
+						г. Киев, ул. Крещатик, 15, Пассаж.
+						<b>
+							Если у вас есть вопрос - позвоните:
+						</b>
+						(044)-000-00-00
+					</div>
+				</div>
+				<div class="main-banner__media">
+					<div class="main-banner__image">
+						<img src="../static/images/general/catalog-img.jpg" alt="catalog-page">
+					</div>
+				</div>
+			</div>
+
+			<div class="main-advantage advantage-catalog">
+				<div class="container">
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-1"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							Самый большой
+							выбор чсов
+						</div>
+					</div>
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-2"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							Гарантия 24
+							месяца
+						</div>
+					</div>
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-3"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							Лучшие цены
+							на рынке
+						</div>
+					</div>
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-4"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							13 лет на
+							рынке
+						</div>
+					</div>
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-5"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							Сеть партнерских
+							магазинов в Европе
+						</div>
+					</div>
+					<div class="main-advantage__item">
+						<div class="main-advantage__media flex-center">
+							<svg class="icon">
+								<use xlink:href="#ico-catalog-6"></use>
+							</svg>
+						</div>
+						<div class="main-advantage__text">
+							Собственный
+							сервисный
+							центр
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-social">
+				<ul class="main-social__list">
+					<li>
+						<a href="#" target="_blank">
+							<svg class="icon">
+								<use xlink:href="#ico-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<svg class="icon">
+								<use xlink:href="#ico-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<svg class="icon">
+								<use xlink:href="#ico-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<svg class="icon">
+								<use xlink:href="#ico-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="bread-crumbs">
+			<div class="container">
+				<ul class="bread-crumbs__list">
+					<li class="bread-crumbs__list">
+						<a href="index.html">
+							Главная
+						</a>
+					</li>
+					<li>
+						Каталог
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="catalog">
+			<div class="container">
+				<form id="form-catalog">
+					<div class="catalog-top__wrap">
+						<div class="catalog-search">
+							<input class="catalog-search__input input" type="text" name="search" autocomplete="off" placeholder="Поиск">
+							<button class="catalog-search__btn" type="submit">
+								<svg class="icon">
+									<use xlink:href="#ico-search"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="filter">
+						<div class="filter-title">
+							<h2>
+								Фильтры
+							</h2>
+							<button type="button">
+								Очистить
+							</button>
+						</div>
+						<div class="filter-tag__block">
+							<ul>
+								<li>
+									<button class="filter__tags--btn" type="button">
+										Audemars Piguet
+										<span>
+											<svg class="icon">
+												<use xlink:href="#ico-close"></use>
+											</svg>
+										</span>
+									</button>
+								</li>
+								<li>
+									<button class="filter__tags--btn" type="button">
+										₴ 909 876 - ₴ 10 909 876
+										<span>
+											<svg class="icon">
+												<use xlink:href="#ico-close"></use>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<button class="filter-open" type="button">
+							<span>
+								Открыть фильтры
+								<svg class="icon">
+									<use xlink:href="#ico-down"></use>
+								</svg>
+							</span>
+							<span class="hidden">
+								Скрыть фильтры
+								<svg class="icon">
+									<use xlink:href="#ico-up"></use>
+								</svg>
+							</span>
+						</button>
+						<div class="filter-wrap filter-hidden">
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Бренды
+								</div>
+								<div class="filter-item__sort scroll">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture0" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture0">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture1" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture1">Alain Silberstein<span>(12)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture2" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0" checked>
+											<label class="label-checkbox" for="manufacture2">Audemars Piguet<span>(33)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture3" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture3">Blancpain<span>(21)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture4" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture4">Boucheron<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture5" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture5">Bovet<span>(331)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture6" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture6">Breguet<span>(32)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture7" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture7">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture8" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture8">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture9" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture9">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture10" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture10">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture11" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture11">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture12" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture12">Breitling<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture13" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture13">Bulgari<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture14" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture14">Carl F. Bucherer<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture15" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture15">Carl F. Bucherer<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture16" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture16">Carl F. Bucherer<span>(64)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture17" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture17">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture18" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture18">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture19" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture19">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture20" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture20">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture21" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture21">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture22" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture22">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture23" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture23">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture24" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture24">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-checkbox" id="manufacture25" type="checkbox" name="filter[manufacture][0]" value="0" data-tag="0">
+											<label class="label-checkbox" for="manufacture25">A. Lange & Söhne<span>(1)</span></label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Цена
+								</div>
+								<div class="filter-range">
+									<div class="filter-range__top">
+										<div id="sliderRange" data-min="0" data-max="8909876"></div>
+										<div class="filter-range__item">
+											<label class="filter__range--label" for="amount-from">
+												<input class="input__counter" id="amount-from" type="text" value="909876" name="filter[price][price-min]">
+											</label>
+										</div>
+										<div class="filter-range__item">
+											<label class="filter__range--label" for="amount-to">
+												<input class="input__counter" id="amount-to" type="text" value="8909876" name="filter[price][price-max]">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Наличие
+								</div>
+								<div class="filter-item__sort">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-radio" id="availability0" type="radio" name="filter[availability]" value="0" data-tag="0" checked>
+											<label class="label-radio" for="availability0">В наличие</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="availability1" type="radio" name="filter[availability]" value="1" data-tag="1">
+											<label class="label-radio" for="availability1">Под заказ</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Тип механизма
+								</div>
+								<div class="filter-item__sort">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-radio" id="mechanism0" type="radio" name="filter[mechanism]" value="0" data-tag="0">
+											<label class="label-radio" for="mechanism0">Автоматические</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="mechanism1" type="radio" name="filter[mechanism]" value="1" data-tag="1">
+											<label class="label-radio" for="mechanism1">Ручной завод</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="mechanism2" type="radio" name="filter[mechanism]" value="2" data-tag="2">
+											<label class="label-radio" for="mechanism2">Кварцевые</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Пол
+								</div>
+								<div class="filter-item__sort">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-radio" id="for0" type="radio" name="filter[for]" value="0" data-tag="0" checked>
+											<label class="label-radio" for="for0">Женские</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="for1" type="radio" name="filter[for]" value="1" data-tag="1">
+											<label class="label-radio" for="for1">Мужские</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="for2" type="radio" name="filter[for]" value="2" data-tag="2">
+											<label class="label-radio" for="for2">Универсальные</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Состояние
+								</div>
+								<div class="filter-item__sort">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-radio" id="condition0" type="radio" name="filter[condition]" value="0" data-tag="0">
+											<label class="label-radio" for="condition0">Новые</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="condition1" type="radio" name="filter[condition]" value="1" data-tag="1">
+											<label class="label-radio" for="condition1">Отличное</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="condition2" type="radio" name="filter[condition]" value="2" data-tag="2">
+											<label class="label-radio" for="condition2">Хорошее</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="condition3" type="radio" name="filter[condition]" value="3" data-tag="3">
+											<label class="label-radio" for="condition3">Удовлетворительное</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<div class="filter-item__title">
+									Комплектность
+								</div>
+								<div class="filter-item__sort">
+									<ul class="filter-item__sort-list">
+										<li class="filter__sort-item">
+											<input class="input-radio" id="package0" type="radio" name="filter[package]" value="0" data-tag="0">
+											<label class="label-radio" for="package0">Часы</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="package1" type="radio" name="filter[package]" value="1" data-tag="1">
+											<label class="label-radio" for="package1">Коробка</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="package2" type="radio" name="filter[package]" value="2" data-tag="2">
+											<label class="label-radio" for="package2">Документы</label>
+										</li>
+										<li class="filter__sort-item">
+											<input class="input-radio" id="package3" type="radio" name="filter[package]" value="3" data-tag="3">
+											<label class="label-radio" for="package3">Коробка и документы</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-show__button">
+								<button type="button" class="btn-arrow">
+									Показать <span>(38)</span>
+									<svg class="icon">
+										<use xlink:href="#ico-arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="catalog-sort">
+							<div class="catalog-sort__item">
+								<span class="catalog-sort__title">Сортировать:</span>
+								<select class="select select-sort" name="catalog[sort]">
+									<option value="По умолчанию" selected="selected">По умолчанию</option>
+									<option value="По новинкам">По новинкам</option>
+									<option value="За популярностью">За популярностью</option>
+									<option value="По цене от мин. до макс.">По цене от мин. до макс.</option>
+									<option value="По цене от макс. до мин.">По цене от макс. до мин.</option>
+									<option value="По названию от А до Я">По названию от А до Я</option>
+									<option value="По названию от Я до А">По названию от Я до А</option>
+								</select>
+							</div>
+					</div>
+					</div>
+					<div class="catalog">
+						<div class="catalog-wrap">
+							<div class="product-item">
+								<div class="product-item__media">
+									<a href="product.html">
+										<img src="../static/images/general/catalog-item.png" alt="product">
+									</a>
+									<div class="product-item__label">
+										<button class="product-item__wish" type="button">
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</button>
+										<ul class="product-item__label-list">
+											<li class="product-item__label-item">
+												Под заказ
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="product-item__des">
+									<div class="product-item__title">
+										<a href="product.html">
+											Rolex Datejust 36 mm
+											- Jubilee - Blue Dial
+											- Perfect
+										</a>
+									</div>
+									<div class="product-item__price">
+										₴ 328 720
+									</div>
+									<a href="product.html" class="btn-primary">Купить</a>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__media">
+									<a href="product.html">
+										<img src="../static/images/general/catalog-item.png" alt="product">
+									</a>
+									<div class="product-item__label">
+										<button class="product-item__wish is-active" type="button">
+											<svg class="icon">
+												<use xlink:href="#ico-star"></use>
+											</svg>
+										</button>
+										<ul class="product-item__label-list">
+											<li class="product-item__label-item">
+												Под заказ
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="product-item__des">
+									<div class="product-item__title">
+										<a href="product.html">
+											Rolex Datejust 36 mm
+											- Jubilee - Blue Dial
+											- Perfect
+										</a>
+									</div>
+									<div class="product-item__price">
+										₴ 328 720
+									</div>
+									<a href="product.html" class="btn-primary">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-pagination pagination">
+							<ul class="pagination-list">
+								<li class="pagination-prev is-disable">
+									<!--								<a href="#">-->
+									<svg class="icon">
+										<use xlink:href="#ico-left"></use>
+									</svg>
+									<!--								</a>-->
+								</li>
+								<li>
+									1
+									<!--								or -->
+									<!--								<a href="#" class="is-active">1</a>-->
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">6</a>
+								</li>
+								<li class="pagination-next">
+									<a href="#">
+										<svg class="icon">
+											<use xlink:href="#ico-right"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+
+<!-- build:js  ../static/js/lib.js -->
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="../static/js/jquery-ui.min.js"></script>
+<!--<script type="text/javascript" src="../static/js/jquery.ui.touch-punch.min.js"></script>-->
+<!-- endbuild -->
+<script  type="text/javascript" src="../static/js/common.js"></script>
+<script  type="text/javascript" src="../static/js/catalog.js"></script>
+
+</body>
+</html>

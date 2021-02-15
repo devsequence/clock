@@ -1,0 +1,105 @@
+.contact{
+  .title{
+    margin-bottom: 20px;
+  }
+}
+.contact-wrap{}
+.contact-wrap{}
+.contact-item{
+  margin-bottom: 40px;
+  &__map{
+   iframe{
+     width: 100%;
+   }
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $primary;
+    margin-bottom: 28px;
+  }
+  &__info{}
+  &__info-item{
+    margin-bottom: 20px;
+  }
+  &__info-media{
+    .icon{
+      font-size: 24px;
+      height: 24px;
+      fill: $gray-100;
+    }
+  }
+  &__info-text{
+    font-size: 18px;
+    line-height: 22px;
+    color: $default;
+    a{
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  }
+  &__social{
+    ul{
+      display: flex;
+      margin: 0 -15px;
+    }
+    li{
+      margin: 0 15px;
+    }
+    img{
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+.contact-social__list-title{
+  font-size: 18px;
+  line-height: 22px;
+  color: $gray-100;
+  margin-bottom: 20px;
+}
+.contact-social__list{
+  display: flex;
+  li{
+    margin-right: 15px;
+  }
+  .icon{
+    width: 30px;
+    height: 30px;
+    fill: $primary;
+  }
+}
+.quote{
+  display: none;
+}
+.contact-form{
+
+  box-sizing: border-box;
+  padding: 20px 15px;
+  background: $gray;
+  .title-center{
+    margin-bottom: 20px;
+  }
+  .label{
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .textarea{
+    display: block;
+    width: 100%;
+  }
+  .input{
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .form-info{
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .btn-arrow{
+    max-width: 280px;
+  }
+}
