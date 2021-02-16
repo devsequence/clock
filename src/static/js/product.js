@@ -2,7 +2,7 @@ $('.slider-main').slick({
     slidesToShow: 1,
     arrows: false,
     asNavFor: '.slider-nav',
-    vertical: true,
+    vertical: false,
     autoplay: false,
     verticalSwiping: true,
 });
@@ -30,7 +30,7 @@ $(window).on('resize orientationchange', function() {
     if ($(window).width() > 1200) {
         $('.slider-nav').slick('unslick');
         $('.slider-nav').slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             asNavFor: '.slider-main',
             vertical: true,
             focusOnSelect: true,

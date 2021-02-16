@@ -304,23 +304,40 @@
 						<div class="nav-container">
 							<div class="slider-nav">
 								<div class="slide">
-									<img src="../static/images/general/product-img-s-1.png" alt="product-img">
+									<div class="slide-item">
+										<img src="../static/images/general/product-img-s-1.png" alt="product-img">
+									</div>
 								</div>
 								<div class="slide">
-									<img src="../static/images/general/product-img-s-2.png" alt="product-img">
+									<div class="slide-item">
+										<img src="../static/images/general/product-img-s-2.png" alt="product-img">
+									</div>
 								</div>
 								<div class="slide">
-									<img src="../static/images/general/product-img-s-3.png" alt="product-img">
+									<div class="slide-item">
+										<img src="../static/images/general/product-img-s-3.png" alt="product-img">
+									</div>
 								</div>
 								<div class="slide">
-									<img src="../static/images/general/product-img-s-2.png" alt="product-img">
+									<div class="slide-item">
+										<img src="../static/images/general/product-img-s-2.png" alt="product-img">
+									</div>
 								</div>
 							</div>
+						</div>
+						<div class="product-label">
+							<button class="product-label__item add-to-wish" type="button">
+								<svg class="icon">
+									<use xlink:href="#ico-star"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 					<div class="product-info">
 						<div class="product-info__price">
-							<div class="product-info__price-cur"> ₴ 557 491 <span>( € 16000 )</span></div>
+							<div class="product-info__price-cur">
+								₴ 557 491 <span>( € 16000 )</span>
+							</div>
 							<div class="product-info__price-info">
 								Расчет в национальной валюте по курсу НБУ
 							</div>
@@ -343,7 +360,7 @@
 								<div class="advantage-item">
 									<div class="advantage-item__media flex-center">
 										<svg class="icon">
-											<use xlink:href="#ico-product-1"></use>
+											<use xlink:href="#ico-procuct-1"></use>
 										</svg>
 									</div>
 									<div class="advantage-item__text">
@@ -353,7 +370,7 @@
 								<div class="advantage-item">
 									<div class="advantage-item__media flex-center">
 										<svg class="icon">
-											<use xlink:href="#ico-product-2"></use>
+											<use xlink:href="#ico-procuct-2"></use>
 										</svg>
 									</div>
 									<div class="advantage-item__text">
@@ -363,7 +380,7 @@
 								<div class="advantage-item">
 									<div class="advantage-item__media flex-center">
 										<svg class="icon">
-											<use xlink:href="#ico-product-3"></use>
+											<use xlink:href="#ico-procuct-3"></use>
 										</svg>
 									</div>
 									<div class="advantage-item__text">
@@ -405,6 +422,9 @@
 										</a>
 									</li>
 								</ul>
+							</div>
+							<div class="product-inf__btn">
+								<a href="#question" class="popup-btn">Задать вопрос</a>
 							</div>
 						</div>
 					</div>
@@ -529,10 +549,12 @@
 							Функции
 						</div>
 						<div class="product-des__item-content">
-							<ul>
+							<ul class="list">
 								<li>
-									<span></span>
-									<span></span>
+									Дата
+								</li>
+								<li>
+									GMT/две час.зоны
 								</li>
 							</ul>
 						</div>
@@ -909,6 +931,40 @@
     <div class="popup-overlay"></div>
 </div>
 
+	<div class="popup" data-popup="question">
+		<div class="popup-wrap">
+			<div class="popup-title">
+				Задать вопрос
+			</div>
+			<div class="form-wrap">
+			<form>
+				<label class="label">
+					<input type="text" name="question[name]"  placeholder="Ваше имя" class="input">
+				</label>
+				<label class="label">
+					<input type="tel" name="question[phone]"  placeholder="Номер телефона" class="input">
+				</label>
+				<label class="label">
+					<input type="email" name="question[email]"  placeholder="E-mail*" class="input" required>
+				</label>
+				<label class="label-textarea" for="question-text">
+					Ваш вопрос
+				</label>
+				<textarea id="question-text" name="question[text]"  class="textarea"></textarea>
+				<button type="submit" class="btn-arrow">
+					Отправить
+					<svg class="icon">
+						<use xlink:href="#ico-arrow-right"></use>
+					</svg>
+				</button>
+				<div class="form-info">
+					* — поля, обязательные для заполнения
+				</div>
+			</form>
+			</div>
+		</div>
+		<div class="popup-overlay"></div>
+	</div>
 </div>
 <!--end-page-wrapper-->
 <div class="hidden">
