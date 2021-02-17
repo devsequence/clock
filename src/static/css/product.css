@@ -972,8 +972,8 @@ body.is-scroll {
   position: relative; }
   .product-slider .product-label {
     position: absolute;
-    top: 20px;
-    left: 20px; }
+    top: 13px;
+    left: 13px; }
     .product-slider .product-label .product-label__item {
       width: 36px;
       height: 36px;
@@ -1992,12 +1992,18 @@ body.is-scroll {
   .work-slider .slick-next {
     right: -25px; }
   .product-page .main-container {
-    width: calc(100% - 130px); }
+    width: calc(100% - 155px); }
+  .product-page .product-title .title {
+    font-size: 48px;
+    line-height: 50px; }
   .product-page .nav-container {
     width: 130px;
     margin: 30px 0 20px; }
     .product-page .nav-container .slick-slide {
       margin-bottom: 30px; }
+    .product-page .nav-container .slick-list {
+      position: relative;
+      top: 15px; }
   .product-page .product-slider {
     max-width: 725px;
     flex-wrap: nowrap;
@@ -2021,11 +2027,14 @@ body.is-scroll {
     margin-bottom: 23px;
     align-items: flex-start; }
   .product-info .btn-default {
-    max-width: 300px; }
+    max-width: 310px; }
   .product-info__btn-link {
     text-align: left;
     padding-left: 30px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    padding-top: 7px; }
+    .product-info__btn-link a {
+      margin-bottom: 14px; }
   .product-inf {
     display: flex;
     flex-wrap: wrap;
@@ -2989,12 +2998,24 @@ body.is-scroll {
       margin-bottom: 48px; }
   .product-info__price-cur {
     font-size: 36px;
-    line-height: 38px; }
+    line-height: 41px; }
     .product-info__price-cur span {
       font-size: 24px; }
   .product-info__price-info {
     font-size: 14px;
     line-height: 15px; }
+  .page-product .header-mobile {
+    padding: 32px 15px 7px; }
+  .page-product .header-mobile__logo {
+    height: 75px; }
+    .page-product .header-mobile__logo img {
+      height: 121px;
+      width: 154px;
+      position: absolute; }
+  .page-product .page-info {
+    padding-top: 134px; }
+    .page-product .page-info ul {
+      padding-left: 196px; }
   .product-info__advantage {
     max-width: 311px; }
     .product-info__advantage .advantage-item__text {
@@ -3008,7 +3029,52 @@ body.is-scroll {
     padding-right: 0;
     text-align: left; }
   .product-page {
-    padding: 30px 0 60px; }
+    padding: 28px 0 60px; }
+    .product-page .product-title {
+      margin-bottom: 51px; }
+    .product-page .product-slider {
+      padding: 20px 0 5px 15px; }
+    .product-page .product-info {
+      padding: 31px 0 0; }
+    .product-page .product-info__button {
+      margin-bottom: 0; }
+    .product-page .product-info__advantage .advantage-item__media {
+      width: 80px;
+      height: 80px;
+      margin-right: 25px; }
+      .product-page .product-info__advantage .advantage-item__media .icon {
+        width: 68px;
+        height: 68px; }
+    .product-page .product-inf {
+      align-items: flex-end; }
+    .product-page .product-inf__btn {
+      margin-bottom: 0; }
+    .product-page .product-slider {
+      margin-bottom: 30px; }
+    .product-page .product-des {
+      margin: 0 -15px;
+      display: flex;
+      flex-wrap: wrap; }
+      .product-page .product-des__item {
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+        padding: 22px 30px 37px; }
+        .product-page .product-des__item:first-of-type {
+          width: 100%;
+          margin: 0 15px 30px; }
+          .product-page .product-des__item:first-of-type .product-des__item-content {
+            column-count: 2; }
+      .product-page .product-des__item-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin: 0 0 24px -30px; }
+      .product-page .product-des__item-content p {
+        font-size: 14px;
+        line-height: 20px; }
+      .product-page .product-des__item-content li {
+        margin-bottom: 10px; }
   .guarantee-info {
     padding: 48px 0 20px; }
     .guarantee-info__title {
@@ -3039,13 +3105,17 @@ body.is-scroll {
     width: calc(50% - 30px);
     margin: 0  30px 0 0; }
   .contact-item__des {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .viewed .title-center {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 30px; } }
 
 @media screen and (min-width: 1250px) {
   .header-mobile {
     padding: 32px 15px 29px; }
   .header .container {
-    max-width: 1230px; }
+    max-width: 1220px; }
   .container {
-    max-width: 1230px;
+    max-width: 1220px;
     margin: 0 auto; } }
