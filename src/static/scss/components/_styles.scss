@@ -383,12 +383,15 @@ button{
   flex-wrap: wrap;
 }
 .rating__label{
-  margin: 0 1px;
+  margin: 0 8px;
+  &:first-of-type{
+    margin-left: 0;
+  }
 }
 .rating-group .icon {
   pointer-events: none;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
 }
 
 .rating__input {
@@ -540,5 +543,27 @@ button{
   .form-btn__bottom{
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+.favorites{
+  .title{
+    margin-bottom: 34px;
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .favorites-nav{
+    display: flex;
+    flex-direction: column-reverse;
+    .btn-arrow{
+      max-width: 290px;
+      .icon{
+        margin-left: 0;
+        margin-right: 21px;
+        transform: rotate(180deg);
+      }
+    }
   }
 }
