@@ -8,7 +8,7 @@
     margin-bottom: 30px;
   }
   .main-image__big{
-    width: 500px;
+    width: 300px;
   }
 }
 .main-banner{
@@ -85,10 +85,16 @@
   padding: 0 0 40px;
   h2{
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 28px;
   }
 }
-
+.sold-page{
+  padding: 40px 0 40px;
+}
+.sold-request__subtitle{
+  display: none;
+}
 .sold-wrap {}
 .sold-item {
   margin-bottom: 80px;
@@ -126,6 +132,15 @@
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    &:after{
+      position: absolute;
+      content: '';
+      width: 120%;
+      height: 60px;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.65) 100%);
+    }
   }
   &__title{
     text-align: center;
@@ -136,15 +151,7 @@
     z-index: 2;
     max-width: 80%;
     margin: -20px auto;
-    &:before{
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 60px;
-      bottom: 0;
-      z-index: -1;
-      background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.85) 100%);
-    }
+
   }
   &__info{
     position: relative;

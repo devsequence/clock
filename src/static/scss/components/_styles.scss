@@ -210,6 +210,13 @@ button{
       color: $white;
     }
   }
+  .subtitle-banner{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 .accordion{
   &-item{
@@ -255,7 +262,7 @@ button{
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 31px;
   }
   b, strong{
     display: block;
@@ -265,11 +272,12 @@ button{
     margin-bottom: 8px;
   }
   ul{
+    margin-bottom: 31px;
     li{
       font-size: 14px;
       line-height: 20px;
       padding-left: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       position: relative;
       &:before{
         position: absolute;
@@ -437,7 +445,14 @@ button{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 120;
+  z-index: -120;
+  left: -200%;
+  top: 0;
+  transition: all ease 300ms;
+  &.active{
+    z-index: 120;
+    left: 0;
+  }
   &-overlay{
     position: absolute;
     top: 0;
@@ -448,6 +463,8 @@ button{
     z-index: 1;
   }
   &-wrap{
+    max-width: 574px;
+    margin: 0 auto;
     z-index: 2;
     position: relative;
     background: $gray;
@@ -455,11 +472,30 @@ button{
     width: 100%;
     padding: 20px;
   }
+  .popup-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $primary;
+    .icon{
+      fill: $white;
+      width: 7px;
+      position: relative;
+      top: 0;
+    }
+  }
   .form-wrap{
     .label{
       width: 100%;
       display: block;
-      margin-bottom: 28px;
+      margin-bottom: 14px;
     }
     .input{
       width: 100%;
@@ -467,11 +503,25 @@ button{
       font-weight: 500;
       font-size: 14px;
       line-height: 15px;
+      height: 34px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid $primary;
+      color: $default;
+      &::placeholder{
+        color: $primary;
+      }
     }
     .textarea{
       display: block;
       width: 100%;
       height: 138px;
+      border: 1px solid $default;
+      background: transparent;
+      color: $default;
+      &::placeholder{
+        color: $primary;
+      }
     }
   }
   .popup-title{
@@ -481,5 +531,14 @@ button{
     color: $default;
     text-align: center;
     margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  .form-info{
+    font-size: 12px;
+    color: $default;
+  }
+  .form-btn__bottom{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
