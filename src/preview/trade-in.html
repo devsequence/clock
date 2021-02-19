@@ -33,7 +33,7 @@
                     <use xlink:href="#ico-phone-circle"></use>
                 </svg>
             </button>
-            <div class="header-mobile__logo">
+            <div class="header-mobile__logo header-logo__page">
                 <img src="../static/images/general/logo.svg" alt="logo">
             </div>
             <button type="button" class="header-btn">
@@ -385,38 +385,65 @@
         <section class="sold sold-page">
             <div class="container">
                 <h2>
-					Чтобы воспользоваться
+					Чтобы
+					<span> воспользоваться</span>
 					услугой обмена часов:
                 </h2>
                 <div class="sold-wrap">
 					<div class="sold-item">
 						<div class="sold-item__step flex-center">01</div>
 						<div class="sold-item__title">
-							Выбираете в Каталоге часы
+							Заявка или звонок от Вас
 						</div>
 					</div>
 					<div class="sold-item">
 						<div class="sold-item__step flex-center">02</div>
 						<div class="sold-item__title">
-							Нажимаете "Trade-in"
+							Предварительная оценка часов
 						</div>
 					</div>
 					<div class="sold-item">
 						<div class="sold-item__step flex-center">03</div>
 						<div class="sold-item__title">
-							Отправляете информация о своих часах
+							Вы приезжаете в офис с часами
 						</div>
 					</div>
 					<div class="sold-item">
 						<div class="sold-item__step flex-center">04</div>
 						<div class="sold-item__title">
-							Через 30 мин получаете ответ
+							Проверка часов экспертом (подлинность, состояние)
 						</div>
 					</div>
 					<div class="sold-item">
 						<div class="sold-item__step flex-center">05</div>
 						<div class="sold-item__title">
-							Обмен на другие часы
+							Договор комиссии
+						</div>
+					</div>
+
+					<div class="sold-item">
+						<div class="sold-item__step flex-center">06</div>
+						<div class="sold-item__title">
+							Часы выставляются на продажу:
+
+						</div>
+						<div class="sold-item__info">
+							<span>
+								*витрина магазина
+							</span>
+							<span>
+								*каталог интернет-магазина
+							 </span>
+							<span>
+								*сайты наших партнёров в Европе
+							</span>
+						</div>
+					</div>
+					<div class="sold-item">
+						<div class="sold-item__step flex-center">07</div>
+						<div class="sold-item__title">
+							Выплата
+							денег на руки
 						</div>
 					</div>
 				</div>
@@ -449,12 +476,9 @@
 						<label class="label">
 							<input type="text" name="sold-request[model]" class="input"  placeholder="Модель">
 						</label>
-						<label class="label">
-							<input type="number" name="sold-request[year]"  class="input"  placeholder="Год">
-						</label>
-						<select name="sold-request[Completeness]" class="select">
-							<option selected>Комплектность</option>
-						</select>
+						<div class="text-form text-form-full">
+							фото ваших часов*
+						</div>
 						<div class="image-upload">
 							<div class="image-upload__title">
 								Фото ваших часов
@@ -475,15 +499,17 @@
 						</div>
 
 						<textarea name="sold-request[sum]"  placeholder="Комментарий (для более точной оценки опишите ваши часы максимально детально)" class="textarea"></textarea>
-						<div class="form-info">
-							* — поля, обязательные для заполнения
+						<div class="form-btn">
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
 						</div>
-						<button type="submit" class="btn-arrow">
-							Отправить
-							<svg class="icon">
-								<use xlink:href="#ico-arrow-right"></use>
-							</svg>
-						</button>
 					</form>
 				</div>
 				<div class="sold-request__info">

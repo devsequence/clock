@@ -186,11 +186,12 @@ button{
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 188px;
-  padding: 12px 25px 13px;
   background: $default;
   font-size: 18px;
   color: $white;
+  max-width: 190px;
+  padding: 14px 25px 15px;
+  letter-spacing: 1.7px;
   .icon{
     width: 15px;
     fill: $primary;
@@ -200,8 +201,11 @@ button{
 .banner{
   background-size: cover !important;
   text-align: center;
+  padding: 43px 0 44px;
   h2{
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 36px;
   }
   .title-banner{
     h2{
@@ -220,7 +224,7 @@ button{
 }
 .accordion{
   &-item{
-    padding: 14px 17px;
+    padding: 14px 15px 17px;
     border: 1px solid $gray-100;
     margin-bottom: 15px;
     text-align: center;
@@ -228,7 +232,7 @@ button{
       background: #F8F5F2;
      .accordion-item__title{
        font-weight: 600;
-       margin-bottom: 20px;
+       margin-bottom: 13px;
      }
      .accordion-item__content{
        display: block;
@@ -240,8 +244,8 @@ button{
     line-height: 19px;
     .icon{
       display: block;
-      width: 16px;
-      height: 16px;
+      width: 11px;
+      height: 11px;
       fill: $gray-100;
       margin: 12px auto 0;
     }

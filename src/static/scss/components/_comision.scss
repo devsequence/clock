@@ -1,11 +1,13 @@
 .main-commission{
+  padding: 24px 0 20px;
   .title{
     font-size: 30px;
+    line-height: 32px;
     margin-bottom: 20px;
     text-align: center;
   }
   .main-banner__title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .main-image__big{
     width: 300px;
@@ -17,7 +19,7 @@
     font-size: 18px;
     line-height: 23px;
     color: $primary;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     text-align: center;
   }
   &__info{
@@ -43,6 +45,11 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  &-page{
+    display: block !important;
+    padding: 62px 0 28px;
+    margin: 26px 0 48px;
+  }
   &-media{
     position: absolute;
     width: 45px;
@@ -86,7 +93,9 @@
   h2{
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 .sold-page{
@@ -97,21 +106,29 @@
 }
 .sold-wrap {}
 .sold-item {
-  margin-bottom: 80px;
+  margin-bottom: 112px;
   position: relative;
   &:after{
     position: absolute;
     content: '';
     background: url("../images/svg/ico-arrow-right.svg") no-repeat;
-    width: 23px;
-    height: 10px;
+    width: 28px;
+    height: 15px;
     transform: rotate(90deg);
     right: 0;
     left: 0;
-    bottom: -40px;
+    bottom: -43px;
+    background-size: contain;
     margin: 0 auto;
   }
+  &:first-of-type{
+    .sold-item__title{
+      max-width: 80%;
+    }
+  }
   &:last-of-type{
+    margin-top: -46px;
+    margin-bottom: 54px;
     .sold-item__title{
       font-weight: 700;
       text-transform: uppercase;
@@ -132,12 +149,13 @@
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    padding: 0 0 20px 0;
     &:after{
       position: absolute;
       content: '';
       width: 120%;
-      height: 60px;
-      bottom: 0;
+      height: 65px;
+      bottom: -5px;
       z-index: -1;
       background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.65) 100%);
     }
@@ -149,14 +167,13 @@
     color: $default;
     position: relative;
     z-index: 2;
-    max-width: 80%;
-    margin: -20px auto;
-
+    max-width: 90%;
+    margin: -45px auto;
   }
   &__info{
     position: relative;
     z-index: 2;
-    margin-top: 30px;
+    margin-top: 60px;
     span{
       display: block;
       text-align: center;
@@ -171,11 +188,12 @@
 .sold-request{
   background: $gray;
   overflow: hidden;
-  padding: 50px 0 0;
+  padding: 54px 0 0;
   h2{
     text-align: center;
-    margin-bottom: 37px;
+    margin-bottom: 48px;
     text-transform: uppercase;
+    font-size: 30px;
   }
   &__form{
     margin-bottom: 30px;
@@ -183,7 +201,14 @@
   .label{
     width: 100%;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+  }
+  .label-email{
+    font-size: 14px;
+    line-height: 104.9%;
+    display: block;
+    color: $primary;
+    margin-bottom: 8px;
   }
   .select{
     display: block;
@@ -193,16 +218,18 @@
   .textarea{
     display: block;
     width: 100%;
+    height: 153px;
   }
   .input, .select{
     padding: 10px 30px;
     width: 100%;
+    height: 55px;
   }
   .image-upload{
-    min-height: 250px;
+    min-height: 258px;
     margin-bottom: 20px;
     background: $white;
-    padding: 20px;
+    padding: 17px 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -216,9 +243,11 @@
       color: $gray-100;
     }
     &__image{
-      margin: 10px 0 14px;
+      margin: 10px 0 7px;
       .icon{
-        margin-top: 30px;
+        margin-top: 51px;
+        width: 26px;
+        height: 26px;
         fill: $gray-100;
       }
     }
@@ -286,10 +315,15 @@
     font-size: 12px;
     line-height: 13px;
     color: $primary;
-    margin: 20px 0;
+    margin: 20px 0 28px;
+  }
+  .btn-arrow{
+    width: 100%;
+    justify-content: center;
+    max-width: 280px;
   }
   &__info{
-    padding: 50px 0;
+    padding: 54px 0 43px;
     position: relative;
     &:after{
       position: absolute;
@@ -306,13 +340,13 @@
     }
   }
   &__info-wrap{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   &__info-item{
     margin-bottom: 20px;
   }
   &__info-media{
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     .icon{
       display: block;
       margin: 0 auto;
@@ -323,7 +357,7 @@
   }
   &__info-text{
     font-size: 18px;
-    line-height: 23px;
+    line-height: 28px;
     color: $default;
     text-align: center;
     a{
@@ -334,6 +368,8 @@
   }
   &__social{
     ul{
+      width: 90%;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
     }
@@ -344,6 +380,19 @@
         width: 100%;
         height: 100%;
       }
+    }
+  }
+}
+.question{
+  padding: 50px 0 0;
+}
+.text-form{
+  display: none;
+}
+.sold-page{
+  h2{
+    span{
+      font-size: 24px;
     }
   }
 }

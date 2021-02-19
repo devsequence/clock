@@ -33,7 +33,7 @@
                     <use xlink:href="#ico-phone-circle"></use>
                 </svg>
             </button>
-            <div class="header-mobile__logo">
+            <div class="header-mobile__logo header-logo__page">
                 <img src="../static/images/general/logo.svg" alt="logo">
             </div>
             <button type="button" class="header-btn">
@@ -388,7 +388,7 @@
 		</section>
         <section class="sold">
             <div class="container">
-				<div class="quote">
+				<div class="quote quote-page">
 					<span class="quote-media">
 						<svg class="icon">
 							<use xlink:href="#ico-quote"></use>
@@ -490,6 +490,13 @@
 						<select name="sold-request[Completeness]" class="select">
 							<option selected>Комплектность</option>
 						</select>
+						<div class="text-form">
+							фото ваших часов*
+						</div>
+						<div class="text-form">
+							В какую сумму вы
+							оцениваете свои часы
+						</div>
 						<div class="image-upload">
 							<div class="image-upload__title">
 								Фото ваших часов
@@ -513,15 +520,17 @@
 							<input type="text" name="sold-request[sum] "  class="input" placeholder="В какую сумму оцениваете">
 						</label>
 						<textarea name="sold-request[sum]"  placeholder="Комментарий (для более точной оценки опишите ваши часы максимально детально)" class="textarea"></textarea>
-						<div class="form-info">
-							* — поля, обязательные для заполнения
+						<div class="form-btn">
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
 						</div>
-						<button type="submit" class="btn-arrow">
-							Отправить
-							<svg class="icon">
-								<use xlink:href="#ico-arrow-right"></use>
-							</svg>
-						</button>
 					</form>
 				</div>
 				<div class="sold-request__info">

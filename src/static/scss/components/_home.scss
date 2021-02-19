@@ -1,23 +1,27 @@
+
 .main-banner{
   background: $gray;
-  padding: 50px 0 33px;
+  padding: 36px 0 33px;
   &__title{
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     display: block;
+    .title{
+      line-height: 46px;
+    }
     img{
       float: right;
       width: 107px;
       height: 45px;
-      margin: 4px 80px 0 0;
+      margin: 2px 70px 0 0;
     }
   }
   &__media{
     display: none;
   }
   &__list{
-    margin-bottom: 43px;
+    margin-bottom: 41px;
     li{
-      margin-bottom: 21px;
+      margin-bottom: 18px;
     }
     a{
       position: relative;
@@ -25,6 +29,7 @@
       font-weight: 500;
       color: $default;
       padding-left: 25px;
+      letter-spacing: .9px;
       .icon{
         position: absolute;
         left: 0;
@@ -53,7 +58,8 @@
     width: 60px;
     height: 60px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 10px 10px 8px;
+    margin-right: 24px;
     .icon{
       fill: $primary;
       width: 100%;
@@ -69,10 +75,12 @@
   }
 }
 .about{
+  padding: 38px 0;
   h2{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
+    font-size: 30px;
   }
   &-wrap{
     text-align: center;
@@ -87,7 +95,9 @@
       margin: 0 auto 24px;
     }
     p{
-      margin-bottom: 24px;
+      margin-bottom: 27px;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
   .header-mobile__nav{

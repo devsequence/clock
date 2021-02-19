@@ -33,7 +33,7 @@
                     <use xlink:href="#ico-phone-circle"></use>
                 </svg>
             </button>
-            <div class="header-mobile__logo">
+            <div class="header-mobile__logo header-logo__page">
                 <img src="../static/images/general/logo.svg" alt="logo">
             </div>
             <button type="button" class="header-btn">
@@ -423,7 +423,7 @@
 		</section>
         <section class="sold">
             <div class="container">
-				<div class="quote">
+				<div class="quote quote-page">
 					<span class="quote-media">
 						<svg class="icon">
 							<use xlink:href="#ico-quote"></use>
@@ -505,6 +505,7 @@
 						<label class="label">
 							<input type="tel" name="sold-request[phone]"  placeholder="Номер телефона*" class="input" required>
 						</label>
+						<span class="label-email">E-mail*</span>
 						<label class="label">
 							<input type="email" name="sold-request[email]"  placeholder="ivanova@" class="input" required>
 						</label>
@@ -528,6 +529,13 @@
 						<select name="sold-request[Completeness]" class="select">
 							<option selected>Комплектность</option>
 						</select>
+						<div class="text-form">
+							фото ваших часов*
+						</div>
+						<div class="text-form">
+							В какую сумму вы
+							оцениваете свои часы
+						</div>
 						<div class="image-upload">
 							<div class="image-upload__title">
 								Фото ваших часов
@@ -642,7 +650,7 @@
 		<section class="question">
 			<div class="container">
 				<div class="accordion">
-					<div class="accordion-item ">
+					<div class="accordion-item">
 						<div class="accordion-item__title">
 							Как быстро продаются часы по комиссии?
 							<svg class="icon">
