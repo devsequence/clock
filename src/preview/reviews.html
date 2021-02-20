@@ -611,7 +611,9 @@
 							</label>
 							<input class="rating__input" name="reviews[rating]" id="rating5" value="5" type="radio">
 						</div>
-
+						<div class="label-text">
+							Ваше имя*
+						</div>
 						<label class="label">
 							<input type="text" name="reviews[name]"  placeholder="Ваше имя*" class="input" required>
 						</label>
@@ -621,16 +623,18 @@
 						<label for="reviews-text" class="textarea-label">
 							Текст отзыва
 						</label>
-						<textarea id="reviews-text" name="reviews[text]"  placeholder="" class="textarea"></textarea>
-						<div class="form-info">
-							* — поля, обязательные для заполнения
+						<textarea id="reviews-text" name="reviews[text]"  placeholder="Текст отзыва" class="textarea"></textarea>
+						<div class="btn-form">
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
 						</div>
-						<button type="submit" class="btn-arrow">
-							Отправить
-							<svg class="icon">
-								<use xlink:href="#ico-arrow-right"></use>
-							</svg>
-						</button>
 					</form>
 				</div>
 			</div>
@@ -676,6 +680,52 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="footer-shop footer-shop-mobile">
+                        <div class="footer-shop__item">
+                            <div class="footer-shop__title">
+                                Магазин:
+                            </div>
+                            <div class="footer-shop__address">
+                                г. Киев, ул. Крещатик 15/4
+                                <a href="tel:+380442581666">
+                                    <span>тел.:</span> +38(044) 258-16-66
+                                </a>
+                            </div>
+                            <div class="footer-shop__time">
+                                Каждый день с 10:00 - 18:00
+                            </div>
+                        </div>
+                        <div class="footer-shop__item">
+                            <div class="footer-shop__title">
+                                Выкуп:
+                            </div>
+                            <div class="footer-shop__address">
+                                г. Киев, ул. Лютеранская 21
+                                <a href="tel:+380442530203">
+                                    <span>тел.:</span> +38(044) 253-02-03
+                                </a>
+                            </div>
+                            <div class="footer-shop__time">
+                                Пн. - Пт.  с 9:00 - 18:00;
+                                Сб. с 11:00 - 18:00
+                            </div>
+                        </div>
+                        <div class="footer-shop__item">
+                            <div class="footer-shop__title">
+                                Сервисный центр:
+                            </div>
+                            <div class="footer-shop__address">
+                                г. Киев, ул. Лютеранская 21
+                                <a href="#">
+                                    <span>тел.:</span> +38(097) 111-66-66
+                                </a>
+                            </div>
+                            <div class="footer-shop__time">
+                                Пн. - Пт.  с 9:00 - 18:00;
+                                Сб. с 11:00 - 18:00
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-nav">

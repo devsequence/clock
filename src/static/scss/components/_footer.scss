@@ -48,6 +48,9 @@
     }
   }
 }
+.footer-social{
+  margin-bottom: -5px;
+}
 .footer-social__list{
   display: flex;
   margin: 0 auto 40px;
@@ -87,6 +90,7 @@
     }
     a{
       color: $gray;
+      margin-top: 8px;
     }
   }
   &__time{
@@ -96,9 +100,10 @@
 }
 .footer-nav{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+  padding-top: 60px;
   li{
-    margin-bottom: 18px;
+    margin-bottom: 21px;
   }
   a{
     font-size: 18px;
@@ -122,6 +127,15 @@
     font-weight: 400;
   }
   &__politic{
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
+  &__copy{
+    margin: 0 -5px;
+  }
+}
+.footer-shop{
+  display: none;
+}
+.footer-shop-mobile{
+  display: block;
 }

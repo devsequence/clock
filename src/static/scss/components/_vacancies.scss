@@ -1,12 +1,17 @@
-.vacancies{}
+.vacancies{
+  padding: 32px 0;
+}
 .vacancies-wrap{}
 .vacancies-item{
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   &__title{
     font-size: 24px;
-    color: $default;
-    margin-bottom: 8px;
+    color: #3A2412;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .9px;
+    line-height: 33px;
   }
   &__text{
     font-size: 14px;
@@ -14,6 +19,7 @@
     margin-bottom: 9px;
     p{
       margin-bottom: 9px;
+      line-height: 25px;
     }
   }
   &__price{

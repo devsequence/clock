@@ -1,11 +1,31 @@
+.main-guarantee{
+  padding: 40px 0 33px;
+  .main-banner__title{
+    margin-bottom: 0;
+  }
+  .title{
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
 .guarantee{
   padding: 0 0 40px;
+  .quote-page{
+    padding: 62px 0 41px;
+    margin: 11px 0 27px;
+  }
+  .wysiwyg{
+    p, ul{
+      margin-bottom: 11px;
+    }
+  }
 }
 
 .guarantee-info{
   background-size: cover !important;
+  padding: 32px 0 9px;
   &__item{
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     .read-more{
       background: transparent;
       text-decoration: underline;
@@ -15,6 +35,7 @@
       color: $primary;
       width: 100%;
       text-align: right;
+      letter-spacing: 1px;
     }
   }
   &__title{
@@ -22,20 +43,21 @@
     line-height: 42px;
     color: $white;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     span{
       display: block;
       font-size: 18px;
-      line-height: 21px;
+      line-height: 24px;
       font-weight: 500;
+      letter-spacing: .2px;
     }
   }
   &__text{
     color: $white;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     &.show-more{
       max-height: 80px;
       overflow: hidden;
@@ -43,12 +65,16 @@
   }
 }
 .table-info{
+  padding: 38px 0 38px;
   table{
     display: none;
   }
   .btn-arrow{
     max-width: 280px;
     margin-bottom: 30px;
+    padding: 14px 25px 15px 43px;
+    letter-spacing: 0.1px;
+    line-height: 19px;
     .icon{
       width: 32px;
     }
@@ -58,7 +84,8 @@
     line-height: 20px;
     color: $default;
     p{
-      margin-bottom: 18px;
+      margin-bottom: 15px;
+      line-height: 20px;
     }
   }
 }

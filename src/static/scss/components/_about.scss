@@ -3,6 +3,9 @@
 }
 .about-page{
   padding: 0 0 40px;
+  .quote-page{
+    margin: -27px 0 40px;
+  }
   .slick-list{
     margin: 0 -10px;
   }
@@ -14,7 +17,12 @@
       object-fit: contain;
     }
   }
-
+  .about-page__text{
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 .about-page, .work{
   .slick-dots{

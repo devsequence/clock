@@ -335,23 +335,24 @@ button{
     justify-content: center;
   }
   .icon{
-    width: 15px;
-    height: 15px;
+    width: 21px;
+    height: 21px;
     fill: $default-100;
+    position: relative;
+    top: 2px;
   }
   li{
     font-size: 24px;
     line-height: 24px;
     color: $primary;
     font-weight: 600;
-    margin: 0 8px;
+    margin: 4px 14px 0;
   }
   a{
     font-weight: 400;
     font-size: 18px;
     color: $default;
     text-decoration: underline;
-    padding: 5px;
     &:hover{
       text-decoration: none;
     }
@@ -387,15 +388,15 @@ button{
   flex-wrap: wrap;
 }
 .rating__label{
-  margin: 0 8px;
+  margin: 0 12px 0 0;
   &:first-of-type{
     margin-left: 0;
   }
 }
 .rating-group .icon {
   pointer-events: none;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
 }
 
 .rating__input {
@@ -409,7 +410,6 @@ button{
 
 .rating__label {
   cursor: pointer;
-  padding: 0 0.1em;
   font-size: 2rem;
 }
 

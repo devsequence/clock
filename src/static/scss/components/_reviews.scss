@@ -1,8 +1,11 @@
 .reviews{
-  padding: 28px 0 0;
+  padding: 28px 0 19px;
   .btn-arrow{
-    max-width: 280px;
+    max-width: 300px;
     margin-bottom: 19px;
+    width: 100%;
+    justify-content: center;
+    padding: 14px 25px 14px;
   }
   .title-center{
     margin-bottom: 28px;
@@ -18,6 +21,8 @@
     select{
       font-size: 18px;
       line-height: 32px;
+      height: 43px;
+      text-transform: uppercase;
       color: $primary;
       border: 0;
       border-bottom: 1px solid $primary;
@@ -29,7 +34,7 @@
 }
 .reviews-wrap{}
 .reviews-item{
-  padding-bottom: 16px;
+  padding-bottom: 13px;
   margin-bottom: 20px;
   border-bottom: 1px solid $gray-100;
   &__title{
@@ -37,7 +42,7 @@
     font-size: 18px;
     line-height: 32px;
     color: $default;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   &__rating{
     display: flex;
@@ -49,12 +54,15 @@
       }
     }
     li{
-      margin: 0 2px;
+      margin: 0 3px;
+      height: 16px;
       .icon{
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
         fill: transparent;
         stroke: $primary;
+        position: relative;
+        top: -7px;
       }
     }
   }
@@ -64,18 +72,18 @@
     color: $default-100;
     width: 150px;
     text-align: right;
+    padding-top: 15px;
 
   }
   &__text, &__answer-text{
     font-size: 14px;
-    line-height: 18px;
+    line-height: 21px;
     color: $default;
   }
   &__inner{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 16px;
   }
   &__answer{
     background: $gray;
@@ -90,28 +98,41 @@
 }
 .reviews-form{
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 30px 15px;
   background: $gray;
   margin: 0 -15px;
+  .title-center{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
   .rating-group{
-    margin: 0 0 30px;
+    margin: 0 0 22px;
+  }
+  .label-text{
+    margin-bottom: 3px;
   }
   .label{
     width: 100%;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+  }
+  .textarea-label{
+    display: none;
   }
   .textarea{
     display: block;
     width: 100%;
+    padding: 17px 25px;
+    height: 156px;
   }
   .input{
     padding: 10px 30px;
     width: 100%;
+    height: 55px;
   }
   .form-info{
     font-size: 12px;
-    margin: 10px 0;
+    margin: 16px 0 24px;
   }
   .btn-arrow{
     max-width: 280px;

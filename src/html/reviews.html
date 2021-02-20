@@ -371,7 +371,9 @@
 							</label>
 							<input class="rating__input" name="reviews[rating]" id="rating5" value="5" type="radio">
 						</div>
-
+						<div class="label-text">
+							Ваше имя*
+						</div>
 						<label class="label">
 							<input type="text" name="reviews[name]"  placeholder="Ваше имя*" class="input" required>
 						</label>
@@ -381,16 +383,18 @@
 						<label for="reviews-text" class="textarea-label">
 							Текст отзыва
 						</label>
-						<textarea id="reviews-text" name="reviews[text]"  placeholder="" class="textarea"></textarea>
-						<div class="form-info">
-							* — поля, обязательные для заполнения
+						<textarea id="reviews-text" name="reviews[text]"  placeholder="Текст отзыва" class="textarea"></textarea>
+						<div class="btn-form">
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
 						</div>
-						<button type="submit" class="btn-arrow">
-							Отправить
-							<svg class="icon">
-								<use xlink:href="#ico-arrow-right"></use>
-							</svg>
-						</button>
 					</form>
 				</div>
 			</div>
