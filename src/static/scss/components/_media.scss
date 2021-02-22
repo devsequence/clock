@@ -233,28 +233,41 @@
   }
 
   .favorites{
-    padding: 10px 0 60px;
+    padding: 10px 0 45px;
     .title{
       margin-bottom: 46px;
     }
     .favorites-wrap{
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -20px;
+      margin: 0 -15px;
     }
     .favorites-nav{
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding: 29px 0 0;
       .btn-arrow{
-        margin: 0 0 0 0;
+        max-width: 286px;
+        width: 286px;
+        letter-spacing: 0;
       }
       .pagination{
         margin: 0 auto;
       }
     }
     .product-item{
-      max-width: calc(25% - 20px);
+      margin: 0 8px 25px;
+      max-width: calc(33.333% - 20px);
+      .product-item__media{
+        margin-bottom: 42px;
+      }
+      .product-item__price {
+        margin-bottom: 19px;
+      }
+      .btn-primary{
+        max-width: 160px;
+      }
     }
   }
   .subtitle-banner{
@@ -1499,19 +1512,27 @@
   }
   // price
   .price{
+    padding: 18px 0 0;
     .title{
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 7px;
+      font-size: 48px;
+      line-height: 50px;
     }
    &-wrap{
      margin-left: 0;
    }
     .price-item{
-      margin-bottom: 30px;
+      width: 100%;
+      margin: 0 0 15px;
       &__title{
         color: $primary;
         background:transparent;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 137.9%;
+        letter-spacing: 0.03em;
         .icon{
           display: none;
         }
@@ -1525,12 +1546,12 @@
     }
     .table-item{
       box-sizing: border-box;
-      padding: 18px 0 19px;
+      padding: 10px 0 12px;
       align-items: center;
       margin-bottom: 0;
       border-bottom: 1px solid $gray;
       &__numb{
-        width: 40px;
+        width: 63px;
         background: transparent;
         position: relative;
         &:after{
@@ -1545,13 +1566,17 @@
       }
       &__title{
         margin-bottom: 0;
-        width: calc(100% - 140px);
+        width: calc(100% - 180px);
+        font-size: 18px;
+        padding: 16px 0 0 31px;
+        letter-spacing: .5px;
       }
       &__price{
         width: 100px;
         padding-right: 20px;
         color: $default;
         font-weight: 400;
+        letter-spacing: .5px;
         span{
           display: none;
         }
@@ -1560,18 +1585,23 @@
         border-top: 1px solid $gray;
         width: 100%;
         margin: 18px 0 0;
-        padding-left: 55px;
         position: relative;
+        padding: 16px 0 0 92px;
+        font-size: 18px;
+        line-height: 32px;
         &:after{
           position: absolute;
           content: '';
-          left: 39px;
+          left: 62px;
           top: 0;
           width: 1px;
           height: calc(100% + 20px);
           border-left: 1px dashed $primary;
         }
-
+        p{
+          font-size: 18px;
+          line-height: 32px;
+        }
         ul{
           &:last-of-type{
             margin-bottom: 0;
@@ -1583,6 +1613,7 @@
         flex-wrap: nowrap;
         background: $gray;
         padding: 0;
+        margin-bottom: 7px;
         .table-item__numb, .table-item__title, .table-item__price{
           font-weight: 500;
           border: 0;
@@ -1595,7 +1626,45 @@
       }
     }
   }
+  .price-info{
+    padding: 32px 0 0;
+    .price-info__title{
+      font-size: 38px;
+      line-height: 42px;
+      text-align: left;
+      font-weight: 500;
+    }
+    .table-info__text{
+      font-size: 18px;
+      line-height: 32px;
+      p{
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+
   // work
+  .work{
+    padding: 17px 0 0;
+    .title{
+      text-align: left;
+      font-size: 48px;
+      margin-bottom: 19px;
+      line-height: 50px;
+    }
+    .work-item__title{
+      margin-bottom: 15px;
+      letter-spacing: .7px;
+    }
+    .work-item__text{
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .work-item{
+      margin-bottom: 32px;
+    }
+  }
   .work-slider{
     .slick-arrow{
       position: absolute;
@@ -1975,6 +2044,14 @@
   }
   .footer-shop-mobile{
     display: none;
+  }
+  .favorites {
+    padding: 22px 0 60px;
+    .title{
+      font-size: 36px;
+      line-height: 38px;
+      font-weight: 500;
+    }
   }
 }
 
