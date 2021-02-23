@@ -350,17 +350,19 @@
 								</label>
 							</div>
 						</div>
-
-						<textarea name="sold-request[sum]"  placeholder="Комментарий (для более точной оценки опишите ваши часы максимально детально)" class="textarea"></textarea>
-						<div class="form-info">
-							* — поля, обязательные для заполнения
+						<label for="textarea" class="text-textarea">Комментарий <span>(опишите поломку ваших часов)</span></label>
+						<textarea name="sold-request[text]"  id="textarea"  placeholder="" class="textarea"></textarea>
+						<div class="form-btn">
+							<div class="form-info">
+								* — поля, обязательные для заполнения
+							</div>
+							<button type="submit" class="btn-arrow">
+								Отправить
+								<svg class="icon">
+									<use xlink:href="#ico-arrow-right"></use>
+								</svg>
+							</button>
 						</div>
-						<button type="submit" class="btn-arrow">
-							Отправить
-							<svg class="icon">
-								<use xlink:href="#ico-arrow-right"></use>
-							</svg>
-						</button>
 					</form>
 				</div>
 				<div class="sold-request__info">

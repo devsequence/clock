@@ -614,6 +614,36 @@ button {
 .phone-menu .popup-centered .popup-close {
   background: transparent; }
 
+.text-textarea {
+  font-size: 14px;
+  line-height: 104.9%;
+  color: #D8D1CA;
+  margin-bottom: 10px; }
+
+.popup-success .popup-wrap {
+  background: #C2A38F;
+  box-shadow: 0px 4px 25px rgba(58, 36, 18, 0.08); }
+
+.popup-success .popup-success__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 104.9%;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #3A2412;
+  text-align: center; }
+
+.popup-success .popup-success__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 104.9%;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-align: center; }
+
+.popup-success .btn-arrow {
+  max-width: 220px; }
+
 .header {
   background: #F8F5F2; }
 
@@ -2661,6 +2691,19 @@ body.is-scroll {
     margin: 0 auto; } }
 
 @media screen and (min-width: 768px) {
+  .text-textarea {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.4%;
+    text-transform: uppercase;
+    width: calc(100% - 30px);
+    margin: 10px 15px 10px;
+    color: #C2A38F;
+    box-sizing: border-box; }
+    .text-textarea span {
+      text-transform: none;
+      font-size: 14px; }
   .vacancies {
     padding: 25px 0 0; }
     .vacancies-item {
@@ -3403,8 +3446,8 @@ body.is-scroll {
   .service {
     padding: 45px 0 80px; }
     .service .quote {
-      padding: 49px auto 25px;
-      margin: 66px 0 0; }
+      padding: 49px 0 25px;
+      margin: 66px auto 0; }
   .service-item {
     max-width: 576px;
     flex-direction: column;

@@ -592,3 +592,36 @@ button{
     }
   }
 }
+.text-textarea{
+  font-size: 14px;
+  line-height: 104.9%;
+  color: $gray-100;
+  margin-bottom: 10px;
+}
+.popup-success{
+  .popup-wrap{
+
+    background: #C2A38F;
+    box-shadow: 0px 4px 25px rgba(58, 36, 18, 0.08);
+  }
+  .popup-success__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 104.9%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: $default;
+    text-align: center;
+  }
+  .popup-success__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 104.9%;
+    color: $white;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .btn-arrow{
+    max-width: 220px;
+  }
+}

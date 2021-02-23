@@ -43,6 +43,21 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .text-textarea{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.4%;
+    text-transform: uppercase;
+    width: calc(100% - 30px);
+    margin: 10px 15px 10px;
+    color: $primary;
+    box-sizing: border-box;
+    span{
+      text-transform: none;
+      font-size: 14px;
+    }
+  }
   .vacancies{
     padding: 25px 0 0;
     &-item{
@@ -1103,8 +1118,8 @@
   .service{
     padding: 45px 0 80px;
     .quote{
-      padding: 49px auto 25px;
-      margin: 66px 0 0;
+      padding: 49px 0 25px;
+      margin: 66px auto 0;
     }
   }
   .service-item{
