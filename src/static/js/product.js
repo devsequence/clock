@@ -74,3 +74,9 @@ $('.viewed-slider').slick({
         }
     ]
 });
+$('.product-favorites__btn').on('click', function (e) {
+    let $this = $(this);
+    $this.toggleClass('active');
+    $this.next().toggleClass('active');
+    $this.find('span, .icon').toggleClass('hidden');
+});

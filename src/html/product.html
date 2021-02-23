@@ -13,7 +13,7 @@
 		<section class="bread-crumbs page-info">
 			<div class="container">
 				<ul class="bread-crumbs__list">
-					<li class="bread-crumbs__item	">
+					<li class="bread-crumbs__item">
 						<a href="index.html">
 							Главная
 						</a>
@@ -42,6 +42,27 @@
 					</h1>
 				</div>
 				<div class="product-page__wrap">
+					<div class="product-favorites">
+						<button class="product-favorites__btn" type="button">
+							<svg class="icon">
+								<use xlink:href="#ico-star"></use>
+							</svg>
+							<svg class="icon hidden">
+								<use xlink:href="#ico-right"></use>
+							</svg>
+							<span>
+								5
+							</span>
+						</button>
+						<div class="product-favorites__item">
+							<div class="product-favorites__title">
+								У вас в избранном <span>5</span> товаров
+							</div>
+							<a href="favorites.html" class="btn-primary">
+								Перейти в избранное
+							</a>
+						</div>
+					</div>
 					<div class="product-slider">
 						<div class="main-container">
 							<div class="slider slider-main">
@@ -105,10 +126,10 @@
 								Купить
 							</button>
 							<div class="product-info__btn-link">
-								<a href="#" class="btn-popup">
+								<a href="#" data-popup="price-popup" type="button"  class="popup-btn">
 									Предложить свою цену
 								</a>
-								<a href="#">
+								<a href="trade-in.html">
 									Trade-in
 								</a>
 							</div>
@@ -145,6 +166,9 @@
 										Магазин в центре Киева
 									</div>
 								</div>
+								<div class="advantage-item-btn product-inf__btn">
+									<button data-popup="question" class="popup-btn">Задать вопрос</button>
+								</div>
 							</div>
 							<div class="product-info__location">
 								<ul class="location-list">
@@ -180,9 +204,9 @@
 										</a>
 									</li>
 								</ul>
-								<div class="product-inf__btn">
-									<button data-popup="question" class="popup-btn">Задать вопрос</button>
-								</div>
+							</div>
+							<div class="product-inf__btn">
+								<button data-popup="question" class="popup-btn">Задать вопрос</button>
 							</div>
 						</div>
 					</div>
@@ -625,6 +649,48 @@
 						* — поля, обязательные для заполнения
 					</div>
 					<span class="buy-text">Мы свяжемся с вами в течение 10 минут</span>
+				</div>
+			</form>
+			</div>
+		</div>
+		<div class="popup-overlay"></div>
+	</div>
+	<div class="popup" data-popup="price-popup">
+		<div class="popup-wrap">
+			<div class="popup-close">
+				<svg class="icon">
+					<use xlink:href="#ico-close"></use>
+				</svg>
+			</div>
+			<div class="popup-title">
+				Предложить цену
+			</div>
+			<div class="form-wrap">
+			<form>
+				<label class="label">
+					<input type="text" name="price-cart[name]"  placeholder="Ваше имя" class="input">
+				</label>
+				<label class="label">
+					<input type="tel" name="price-cart[phone]"  placeholder="Номер телефона" class="input">
+				</label>
+				<label class="label">
+					<input type="email" name="price-cart[email]"  placeholder="E-mail*" class="input" required>
+				</label>
+				<label class="label-textarea" for="price-cart-text">
+					Ваш вопрос
+				</label>
+				<textarea id="price-cart-text" name="price[text]"  class="textarea"></textarea>
+				<div class="form-btn__bottom">
+					<button type="submit" class="btn-arrow">
+						Отправить
+						<svg class="icon">
+							<use xlink:href="#ico-arrow-right"></use>
+						</svg>
+					</button>
+					<div class="form-info">
+						* — поля, обязательные для заполнения
+					</div>
+					<span class="buy-text">Мы рассмотрим ваше предложение и ответим в течение 30 мин.</span>
 				</div>
 			</form>
 			</div>

@@ -550,7 +550,7 @@ button{
   }
 }
 .favorites{
-  padding: 32px 0 0;
+  padding: 32px 0;
   .title{
     margin-bottom: 27px;
     font-size: 24px;
@@ -569,11 +569,20 @@ button{
     flex-direction: column-reverse;
     .btn-arrow{
       max-width: 290px;
+      padding: 14px 13px 15px;
+      letter-spacing: .7px;
       .icon{
         margin-left: 0;
         margin-right: 21px;
         transform: rotate(180deg);
       }
+    }
+  }
+}
+.phone-menu {
+  .popup-centered{
+    .popup-close{
+      background: transparent;
     }
   }
 }

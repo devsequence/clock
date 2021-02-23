@@ -1,7 +1,7 @@
 $(window).on('load', function () {
     const $this = $(this);
     const $thisWidth = $this.width();
-    if($thisWidth > 768){}else{
+    if($thisWidth > 767){}else{
         $(window).on('scroll', function() {
             const $this = $(this);
             const $thisHeader = $('.header');
